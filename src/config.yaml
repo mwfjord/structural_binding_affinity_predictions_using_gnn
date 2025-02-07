@@ -1,0 +1,37 @@
+wandb:
+  project: "structural_binding_affinity_predictions_using_gnn"
+  entity: "mwfjord"
+  name: "GNN Training"
+
+model:
+  type: "GNN"
+  layers: 3
+  hidden_units: 128
+  activation: "relu"
+
+training:
+  epochs: 100
+  batch_size: 32
+  learning_rate: 0.001
+  optimizer: "adam"
+  # Scheduler settings for CosineAnnealingWarmRestarts:
+  T_0: 10             # Number of iterations for the first restart.
+  T_mult: 2           # Factor by which the number of iterations increases after a restart.
+  eta_min: 1e-6       # Minimum learning rate.
+  # Warmup settings:
+  warmup_epochs: 5    # Number of epochs to use a linear learning rate warmup.
+  # Early stopping and EMA:
+  early_stop_patience: 100   # Number of epochs with no improvement after which training will be stopped.
+  ema_decay: 0.99     # Decay factor for the Exponential Moving Average.
+
+dataset:
+  name: "KLF1_K_d"
+  split_ratio: 
+    train: 0.8
+    validation: 0.1
+    test: 0.1
+
+logging:
+  log_interval: 10
+  save_model: true
+  save_interval: 10

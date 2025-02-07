@@ -1,0 +1,14 @@
+2025-02-07 12:19:46,409 INFO    MainThread:1159740 [wandb_init.py:setup_run_log_directory():637] Logging user logs to /home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/wandb/run-20250207_121946-s47yo55b/logs/debug.log
+2025-02-07 12:19:46,409 INFO    MainThread:1159740 [wandb_init.py:setup_run_log_directory():638] Logging internal logs to /home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/wandb/run-20250207_121946-s47yo55b/logs/debug-internal.log
+2025-02-07 12:19:46,409 INFO    MainThread:1159740 [wandb_init.py:init():756] calling init triggers
+2025-02-07 12:19:46,409 INFO    MainThread:1159740 [wandb_init.py:init():761] wandb.init called with sweep_config: {}
+config: {'_wandb': {}}
+2025-02-07 12:19:46,409 INFO    MainThread:1159740 [wandb_init.py:init():781] wandb.init() called when a run is still active
+2025-02-07 12:19:46,411 INFO    MainThread:1159740 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-02-07 12:19:46,411 INFO    MainThread:1159740 [wandb_init.py:_pause_backend():554] pausing backend
+2025-02-07 12:19:46,421 INFO    MainThread:1159740 [wandb_init.py:_resume_backend():559] resuming backend
+2025-02-07 12:19:46,423 INFO    MainThread:1159740 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-02-07 12:19:46,423 INFO    MainThread:1159740 [wandb_init.py:_pause_backend():554] pausing backend
+2025-02-07 12:19:46,440 INFO    MainThread:1159740 [wandb_init.py:_resume_backend():559] resuming backend
+2025-02-07 12:19:46,538 INFO    MainThread:1159740 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-02-07 12:19:46,539 INFO    MainThread:1159740 [wandb_init.py:_pause_backend():554] pausing backend

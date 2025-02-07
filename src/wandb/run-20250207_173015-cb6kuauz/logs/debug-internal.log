@@ -1,0 +1,17 @@
+{"time":"2025-02-07T17:30:16.142869026+01:00","level":"INFO","msg":"stream: starting","core version":"0.19.6","symlink path":"/home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/wandb/run-20250207_173015-cb6kuauz/logs/debug-core.log"}
+{"time":"2025-02-07T17:30:16.253796348+01:00","level":"INFO","msg":"created new stream","id":"cb6kuauz"}
+{"time":"2025-02-07T17:30:16.253835884+01:00","level":"INFO","msg":"stream: started","id":"cb6kuauz"}
+{"time":"2025-02-07T17:30:16.253877082+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"cb6kuauz"}
+{"time":"2025-02-07T17:30:16.253901639+01:00","level":"INFO","msg":"handler: started","stream_id":"cb6kuauz"}
+{"time":"2025-02-07T17:30:16.253987502+01:00","level":"INFO","msg":"sender: started","stream_id":"cb6kuauz"}
+{"time":"2025-02-07T17:30:16.511109971+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-02-07T17:30:16.673701726+01:00","level":"INFO","msg":"stream: closing","id":"cb6kuauz"}
+{"time":"2025-02-07T17:30:16.673742032+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-02-07T17:30:16.674292931+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-02-07T17:30:17.658844966+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-02-07T17:30:17.858771048+01:00","level":"INFO","msg":"handler: closed","stream_id":"cb6kuauz"}
+{"time":"2025-02-07T17:30:17.858832394+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"cb6kuauz"}
+{"time":"2025-02-07T17:30:17.858857572+01:00","level":"INFO","msg":"sender: closed","stream_id":"cb6kuauz"}
+{"time":"2025-02-07T17:30:17.858907858+01:00","level":"INFO","msg":"stream: closed","id":"cb6kuauz"}
+{"time":"2025-02-07T17:30:17.859030682+01:00","level":"WARN","msg":"runwork: ignoring record after close","work":{"Record":{"RecordType":{"Request":{"RequestType":{"NetworkStatus":{}}}},"control":{"local":true,"mailbox_slot":"jkunu7ik2t22","connection_id":"127.0.0.1:32936"},"_info":{"stream_id":"cb6kuauz"}}}}
+{"time":"2025-02-07T17:30:17.859277702+01:00","level":"WARN","msg":"runwork: ignoring record after close","work":{"Record":{"RecordType":{"Request":{"RequestType":{"InternalMessages":{}}}},"control":{"local":true,"mailbox_slot":"lngfgx6bpqpb","connection_id":"127.0.0.1:32936"},"_info":{"stream_id":"cb6kuauz"}}}}

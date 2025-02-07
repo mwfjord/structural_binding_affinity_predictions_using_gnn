@@ -1,0 +1,6 @@
+{"time":"2025-02-07T15:20:40.305646846+01:00","level":"INFO","msg":"stream: starting","core version":"0.19.6","symlink path":"/home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/wandb/run-20250207_152040-noqfql02/logs/debug-core.log"}
+{"time":"2025-02-07T15:20:40.415894277+01:00","level":"INFO","msg":"created new stream","id":"noqfql02"}
+{"time":"2025-02-07T15:20:40.415931247+01:00","level":"INFO","msg":"stream: started","id":"noqfql02"}
+{"time":"2025-02-07T15:20:40.416008684+01:00","level":"INFO","msg":"sender: started","stream_id":"noqfql02"}
+{"time":"2025-02-07T15:20:40.415982474+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"noqfql02"}
+{"time":"2025-02-07T15:20:40.416048009+01:00","level":"INFO","msg":"handler: started","stream_id":"noqfql02"}

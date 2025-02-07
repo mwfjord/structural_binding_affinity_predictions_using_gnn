@@ -1,0 +1,63 @@
+/home/marcus/programming/gnn-protein-dna/lib/python3.10/site-packages/tqdm/auto.py:21: TqdmWarning: IProgress not found. Please update jupyter and ipywidgets. See https://ipywidgets.readthedocs.io/en/stable/user_install.html
+  from .autonotebook import tqdm as notebook_tqdm
+Root dir:  ../data/train
+PWD:  /home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src
+Label file:  ../data/train/binding_affinities.csv
+Loading labels from CSV file...
+Processing...
+273it [00:04, 58.04it/s]
+Done!
+Root dir:  ../data/validation
+PWD:  /home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src
+Label file:  ../data/validation/binding_affinities.csv
+Loading labels from CSV file...
+Processing...
+38it [00:00, 54.83it/s]
+Done!
+Root dir:  ../data/test
+PWD:  /home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src
+Label file:  ../data/test/binding_affinities.csv
+Loading labels from CSV file...
+Processing...
+44it [00:00, 72.45it/s]
+Done!
+ProteinDNADataset(273)
+/home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/proteinDNADataset.py:138: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  data = torch.load(os.path.join(self.processed_dir,
+Root dir:  ../data/train
+PWD:  /home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src
+Label file:  ../data/train/binding_affinities.csv
+Loading labels from CSV file...
+Processing...
+273it [00:04, 57.44it/s]
+Done!
+Root dir:  ../data/validation
+PWD:  /home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src
+Label file:  ../data/validation/binding_affinities.csv
+Loading labels from CSV file...
+Processing...
+38it [00:00, 54.82it/s]
+Done!
+Root dir:  ../data/test
+PWD:  /home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src
+Label file:  ../data/test/binding_affinities.csv
+Loading labels from CSV file...
+Processing...
+44it [00:00, 56.28it/s]
+Done!
+ProteinDNADataset(273)
+/home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/proteinDNADataset.py:138: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  data = torch.load(os.path.join(self.processed_dir,
+/home/marcus/programming/gnn-protein-dna/lib/python3.10/site-packages/torch_geometric/data/dataset.py:169: UserWarning: Found floating-point labels while calling `dataset.num_classes`. Returning the number of unique elements. Please make sure that this is expected before proceeding.
+  warnings.warn("Found floating-point labels while calling "
+Root dir:  ../data/train
+PWD:  /home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src
+Label file:  ../data/train/binding_affinities.csv
+Loading labels from CSV file...
+Processing...
+273it [00:04, 56.51it/s]
+Done!
+Root dir:  ../data/validation
+PWD:  /home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src
+Label file:  ../data/validation/binding_affinities.csv
+Loading labels from CSV file...

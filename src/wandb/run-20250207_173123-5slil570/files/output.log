@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/train.py", line 155, in <module>
+    main()
+  File "/home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/train.py", line 88, in main
+    input_dim = train_dataset[0].num_node_features
+UnboundLocalError: local variable 'train_dataset' referenced before assignment

@@ -1,0 +1,121 @@
+Using GPU
+/home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/proteinDNADataset.py:138: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  data = torch.load(os.path.join(self.processed_dir,
+/home/marcus/programming/gnn-protein-dna/lib/python3.10/site-packages/torch_geometric/data/dataset.py:169: UserWarning: Found floating-point labels while calling `dataset.num_classes`. Returning the number of unique elements. Please make sure that this is expected before proceeding.
+  warnings.warn("Found floating-point labels while calling "
+[34m[1mwandb[0m: Adding directory to artifact (./../data)... Done. 1.4s
+/home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/train.py:103: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  self.scaler = torch.cuda.amp.GradScaler()
+Training:   0%|                                                                                                                                                           | 0/9 [00:00<?, ?it/s]/home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/train.py:122: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+/home/marcus/programming/gnn-protein-dna/lib/python3.10/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([32])) that is different to the input size (torch.Size([32, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/home/marcus/programming/gnn-protein-dna/lib/python3.10/site-packages/torch/optim/lr_scheduler.py:216: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  warnings.warn(
+Training:  89%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▋                | 8/9 [00:01<00:00,  6.75it/s]/home/marcus/programming/gnn-protein-dna/lib/python3.10/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([17])) that is different to the input size (torch.Size([17, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Validation:   0%|                                                                                                                                                         | 0/2 [00:00<?, ?it/s]/home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/train.py:157: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+/home/marcus/programming/gnn-protein-dna/lib/python3.10/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([6])) that is different to the input size (torch.Size([6, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+                                                                                                                                                                                                
+Epoch 1: Train Loss = 675211100.4444, Val Loss = 660009344.0000
+Epoch 2: Train Loss = 656632547.5556, Val Loss = 660009344.0000
+Epoch 3: Train Loss = 651270030.2222, Val Loss = 657189408.0000
+Epoch 4: Train Loss = 649379733.3333, Val Loss = 648564560.0000
+Epoch 5: Train Loss = 624248309.3333, Val Loss = 631647216.0000
+Epoch 6: Train Loss = 615892650.6667, Val Loss = 620804352.0000
+Epoch 7: Train Loss = 606080170.6667, Val Loss = 612591792.0000
+Epoch 8: Train Loss = 615311669.3333, Val Loss = 607665440.0000
+Epoch 9: Train Loss = 592712455.1111, Val Loss = 605639264.0000
+Epoch 10: Train Loss = 602896771.5556, Val Loss = 605289168.0000
+Epoch 11: Train Loss = 575968355.5556, Val Loss = 565708272.0000
+Epoch 12: Train Loss = 544085333.3333, Val Loss = 517466608.0000
+Epoch 13: Train Loss = 467051496.8889, Val Loss = 472834544.0000
+Epoch 14: Train Loss = 434580757.3333, Val Loss = 451303040.0000
+Epoch 15: Train Loss = 429082396.4444, Val Loss = 454057888.0000
+Epoch 16: Train Loss = 422634698.6667, Val Loss = 454764464.0000
+Epoch 17: Train Loss = 439619569.7778, Val Loss = 451678848.0000
+Epoch 18: Train Loss = 441600337.7778, Val Loss = 451146064.0000
+Epoch 19: Train Loss = 424588693.3333, Val Loss = 450648112.0000
+Epoch 20: Train Loss = 427633056.0000, Val Loss = 450754688.0000
+Epoch 21: Train Loss = 435908544.0000, Val Loss = 450950304.0000
+Epoch 22: Train Loss = 420041258.6667, Val Loss = 450605808.0000
+Epoch 23: Train Loss = 433830065.7778, Val Loss = 450677296.0000
+Epoch 24: Train Loss = 425848853.3333, Val Loss = 450817488.0000
+Epoch 25: Train Loss = 423412981.3333, Val Loss = 450808336.0000
+Epoch 26: Train Loss = 425782485.3333, Val Loss = 450786448.0000
+Epoch 27: Train Loss = 425419697.7778, Val Loss = 450795520.0000
+Epoch 28: Train Loss = 427788725.3333, Val Loss = 450773632.0000
+Epoch 29: Train Loss = 426102506.6667, Val Loss = 450776576.0000
+Epoch 30: Train Loss = 424116945.7778, Val Loss = 450778224.0000
+Epoch 31: Train Loss = 426714673.7778, Val Loss = 450962416.0000
+Epoch 32: Train Loss = 421181802.6667, Val Loss = 452144416.0000
+Epoch 33: Train Loss = 423029002.6667, Val Loss = 450605376.0000
+Epoch 34: Train Loss = 428464330.6667, Val Loss = 450631280.0000
+Epoch 35: Train Loss = 424908942.2222, Val Loss = 450604560.0000
+Epoch 36: Train Loss = 428876586.6667, Val Loss = 450640480.0000
+Epoch 37: Train Loss = 418810236.4444, Val Loss = 451220496.0000
+Epoch 38: Train Loss = 417929370.6667, Val Loss = 450589024.0000
+Epoch 39: Train Loss = 437525646.2222, Val Loss = 451829296.0000
+Epoch 40: Train Loss = 430907008.0000, Val Loss = 450620848.0000
+Epoch 41: Train Loss = 430868611.5556, Val Loss = 452763856.0000
+Epoch 42: Train Loss = 433785240.8889, Val Loss = 451042112.0000
+Epoch 43: Train Loss = 429449607.1111, Val Loss = 450585104.0000
+Epoch 44: Train Loss = 433958709.3333, Val Loss = 451023200.0000
+Epoch 45: Train Loss = 426247324.4444, Val Loss = 451093968.0000
+Epoch 46: Train Loss = 434405432.8889, Val Loss = 451422752.0000
+Epoch 47: Train Loss = 417764796.4444, Val Loss = 450530560.0000
+Epoch 48: Train Loss = 410621900.4444, Val Loss = 450539904.0000
+Epoch 49: Train Loss = 410359130.6667, Val Loss = 450713936.0000
+Epoch 50: Train Loss = 424539946.6667, Val Loss = 450953536.0000
+Epoch 51: Train Loss = 441473429.3333, Val Loss = 450560128.0000
+Epoch 52: Train Loss = 423810008.8889, Val Loss = 450593968.0000
+Epoch 53: Train Loss = 432763125.3333, Val Loss = 450578576.0000
+Epoch 54: Train Loss = 423676323.5556, Val Loss = 450618704.0000
+Epoch 55: Train Loss = 416230289.7778, Val Loss = 450909104.0000
+Epoch 56: Train Loss = 446429751.1111, Val Loss = 451475408.0000
+Epoch 57: Train Loss = 418631104.0000, Val Loss = 452480816.0000
+Epoch 58: Train Loss = 434780672.0000, Val Loss = 452801632.0000
+Epoch 59: Train Loss = 422485358.2222, Val Loss = 451978704.0000
+Epoch 60: Train Loss = 429951534.2222, Val Loss = 451444992.0000
+Epoch 61: Train Loss = 425788704.0000, Val Loss = 451097248.0000
+Epoch 62: Train Loss = 433022208.0000, Val Loss = 450847008.0000
+Epoch 63: Train Loss = 430149575.1111, Val Loss = 450765392.0000
+Epoch 64: Train Loss = 423592792.8889, Val Loss = 450637216.0000
+Epoch 65: Train Loss = 420065514.6667, Val Loss = 450604656.0000
+Epoch 66: Train Loss = 427111527.1111, Val Loss = 450606480.0000
+Epoch 67: Train Loss = 436538645.3333, Val Loss = 450602064.0000
+Epoch 68: Train Loss = 428155132.4444, Val Loss = 450608128.0000
+Epoch 69: Train Loss = 427573777.7778, Val Loss = 450602976.0000
+Epoch 70: Train Loss = 422742890.6667, Val Loss = 450594192.0000
+Epoch 71: Train Loss = 423587726.2222, Val Loss = 450614672.0000
+Epoch 72: Train Loss = 425829930.6667, Val Loss = 450569664.0000
+Epoch 73: Train Loss = 419303123.5556, Val Loss = 452247056.0000
+Epoch 74: Train Loss = 430788984.8889, Val Loss = 450697088.0000
+Epoch 75: Train Loss = 430926048.0000, Val Loss = 450699056.0000
+Epoch 76: Train Loss = 423132174.2222, Val Loss = 450655632.0000
+Epoch 77: Train Loss = 431285863.1111, Val Loss = 450577376.0000
+Epoch 78: Train Loss = 422107537.7778, Val Loss = 450525376.0000
+Epoch 79: Train Loss = 425738062.2222, Val Loss = 450582416.0000
+Epoch 80: Train Loss = 422165400.8889, Val Loss = 450548032.0000
+Epoch 81: Train Loss = 421444846.2222, Val Loss = 451076528.0000
+Epoch 82: Train Loss = 429456074.6667, Val Loss = 450603696.0000
+Epoch 83: Train Loss = 430655953.7778, Val Loss = 450655888.0000
+Epoch 84: Train Loss = 417882432.0000, Val Loss = 450530208.0000
+Epoch 85: Train Loss = 421959317.3333, Val Loss = 450839680.0000
+Epoch 86: Train Loss = 424301432.8889, Val Loss = 450644688.0000
+Epoch 87: Train Loss = 424942069.3333, Val Loss = 451011984.0000
+Epoch 88: Train Loss = 425934161.7778, Val Loss = 451228176.0000
+Epoch 89: Train Loss = 429484405.3333, Val Loss = 450762016.0000
+Epoch 90: Train Loss = 411086600.8889, Val Loss = 450603104.0000
+Epoch 91: Train Loss = 420691587.5556, Val Loss = 450524128.0000
+Epoch 92: Train Loss = 432629815.1111, Val Loss = 450738688.0000
+Epoch 93: Train Loss = 422731196.4444, Val Loss = 450626896.0000
+Epoch 94: Train Loss = 428295207.1111, Val Loss = 450523424.0000
+Epoch 95: Train Loss = 430861628.4444, Val Loss = 450673360.0000
+Epoch 96: Train Loss = 437646243.5556, Val Loss = 451883152.0000
+Epoch 97: Train Loss = 438507982.2222, Val Loss = 450498384.0000
+Epoch 98: Train Loss = 421537649.7778, Val Loss = 452473136.0000
+Epoch 99: Train Loss = 443158449.7778, Val Loss = 452180208.0000
+Epoch 100: Train Loss = 436866805.3333, Val Loss = 450641792.0000
