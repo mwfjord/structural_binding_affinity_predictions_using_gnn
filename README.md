@@ -1,1 +1,0 @@
-# structural_binding_affinity_predictions_using_gnn
