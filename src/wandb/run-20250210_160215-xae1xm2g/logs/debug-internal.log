@@ -1,0 +1,15 @@
+{"time":"2025-02-10T16:02:16.111579676+01:00","level":"INFO","msg":"stream: starting","core version":"0.19.6","symlink path":"/home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/wandb/run-20250210_160215-xae1xm2g/logs/debug-core.log"}
+{"time":"2025-02-10T16:02:16.222575075+01:00","level":"INFO","msg":"created new stream","id":"xae1xm2g"}
+{"time":"2025-02-10T16:02:16.222616143+01:00","level":"INFO","msg":"stream: started","id":"xae1xm2g"}
+{"time":"2025-02-10T16:02:16.222640619+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"xae1xm2g"}
+{"time":"2025-02-10T16:02:16.222676828+01:00","level":"INFO","msg":"handler: started","stream_id":"xae1xm2g"}
+{"time":"2025-02-10T16:02:16.222746431+01:00","level":"INFO","msg":"sender: started","stream_id":"xae1xm2g"}
+{"time":"2025-02-10T16:02:16.539370479+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-02-10T16:02:22.787228844+01:00","level":"INFO","msg":"stream: closing","id":"xae1xm2g"}
+{"time":"2025-02-10T16:02:22.787259012+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-02-10T16:02:22.787861708+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-02-10T16:02:23.370072898+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-02-10T16:02:23.565875847+01:00","level":"INFO","msg":"handler: closed","stream_id":"xae1xm2g"}
+{"time":"2025-02-10T16:02:23.565918278+01:00","level":"INFO","msg":"sender: closed","stream_id":"xae1xm2g"}
+{"time":"2025-02-10T16:02:23.56591401+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"xae1xm2g"}
+{"time":"2025-02-10T16:02:23.566028668+01:00","level":"INFO","msg":"stream: closed","id":"xae1xm2g"}

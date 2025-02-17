@@ -1,0 +1,16 @@
+{"time":"2025-02-10T10:56:31.969793025+01:00","level":"INFO","msg":"stream: starting","core version":"0.19.6","symlink path":"/home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/wandb/run-20250210_105631-ahutfmmg/logs/debug-core.log"}
+{"time":"2025-02-10T10:56:32.079666329+01:00","level":"INFO","msg":"created new stream","id":"ahutfmmg"}
+{"time":"2025-02-10T10:56:32.079707677+01:00","level":"INFO","msg":"stream: started","id":"ahutfmmg"}
+{"time":"2025-02-10T10:56:32.079754947+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"ahutfmmg"}
+{"time":"2025-02-10T10:56:32.079797188+01:00","level":"INFO","msg":"handler: started","stream_id":"ahutfmmg"}
+{"time":"2025-02-10T10:56:32.07988239+01:00","level":"INFO","msg":"sender: started","stream_id":"ahutfmmg"}
+{"time":"2025-02-10T10:56:32.35244781+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-02-10T10:59:16.90953012+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-02-10T10:59:16.910159988+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-02-10T10:59:17.910223488+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact graph_classification_model","runtime_seconds":1.003677676},{"desc":"uploading history steps 90-99, summary, console lines 123-132","runtime_seconds":0.118144631},{"desc":"uploading config.yaml","runtime_seconds":0.112137011,"progress":"1.4KB/1.4KB"}],"total_operations":3}}
+{"time":"2025-02-10T10:59:19.253767106+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-02-10T10:59:20.437030106+01:00","level":"INFO","msg":"stream: closing","id":"ahutfmmg"}
+{"time":"2025-02-10T10:59:20.437054202+01:00","level":"INFO","msg":"handler: closed","stream_id":"ahutfmmg"}
+{"time":"2025-02-10T10:59:20.437068339+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"ahutfmmg"}
+{"time":"2025-02-10T10:59:20.437078228+01:00","level":"INFO","msg":"sender: closed","stream_id":"ahutfmmg"}
+{"time":"2025-02-10T10:59:20.437214617+01:00","level":"INFO","msg":"stream: closed","id":"ahutfmmg"}

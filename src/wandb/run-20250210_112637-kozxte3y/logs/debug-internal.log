@@ -1,0 +1,16 @@
+{"time":"2025-02-10T11:26:37.323264833+01:00","level":"INFO","msg":"stream: starting","core version":"0.19.6","symlink path":"/home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/wandb/run-20250210_112637-kozxte3y/logs/debug-core.log"}
+{"time":"2025-02-10T11:26:37.433641146+01:00","level":"INFO","msg":"created new stream","id":"kozxte3y"}
+{"time":"2025-02-10T11:26:37.43368003+01:00","level":"INFO","msg":"stream: started","id":"kozxte3y"}
+{"time":"2025-02-10T11:26:37.433763379+01:00","level":"INFO","msg":"sender: started","stream_id":"kozxte3y"}
+{"time":"2025-02-10T11:26:37.433779419+01:00","level":"INFO","msg":"handler: started","stream_id":"kozxte3y"}
+{"time":"2025-02-10T11:26:37.433735967+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"kozxte3y"}
+{"time":"2025-02-10T11:26:37.732549465+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-02-10T11:27:42.835599729+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-02-10T11:27:42.836274563+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-02-10T11:27:43.566895035+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-02-10T11:27:43.836159396+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading console lines 18-26","runtime_seconds":0.070874849}],"total_operations":1}}
+{"time":"2025-02-10T11:27:44.950443003+01:00","level":"INFO","msg":"stream: closing","id":"kozxte3y"}
+{"time":"2025-02-10T11:27:44.950463783+01:00","level":"INFO","msg":"handler: closed","stream_id":"kozxte3y"}
+{"time":"2025-02-10T11:27:44.950477589+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"kozxte3y"}
+{"time":"2025-02-10T11:27:44.950552772+01:00","level":"INFO","msg":"sender: closed","stream_id":"kozxte3y"}
+{"time":"2025-02-10T11:27:44.950601365+01:00","level":"INFO","msg":"stream: closed","id":"kozxte3y"}

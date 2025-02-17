@@ -1,0 +1,23 @@
+{
+"ALA": "C[C@H](N)C(O)=O                                            ",
+"ARG": "N[C@@H](CCCNC(N)=[NH2+])C(O)=O                             ",
+"ASP": "N[C@@H](CC(O)=O)C(O)=O                                     ",
+"CYS": "N[C@@H](CS)C(O)=O                                          ",
+"DA": "Nc1ncnc2n(cnc12)[C@H]3C[C@H](O)[C@@H](CO[P](O)(O)=O)O3     ",
+"DC": "NC1=NC(=O)N(C=C1)[C@H]2C[C@H](O)[C@@H](CO[P](O)(O)=O)O2    ",
+"DG": "NC1=Nc2n(cnc2C(=O)N1)[C@H]3C[C@H](O)[C@@H](CO[P](O)(O)=O)O3",
+"DT": "CC1=CN([C@H]2C[C@H](O)[C@@H](CO[P](O)(O)=O)O2)C(=O)NC1=O   ",
+"GLN": "N[C@@H](CCC(N)=O)C(O)=O                                    ",
+"GLU": "N[C@@H](CCC(O)=O)C(O)=O                                    ",
+"GLY": "NCC(O)=O                                                   ",
+"HIS": "N[C@@H](Cc1c[nH]c[nH+]1)C(O)=O                             ",
+"LEU": "CC(C)C[C@H](N)C(O)=O                                       ",
+"LYS": "N[C@@H](CCCC[NH3+])C(O)=O                                  ",
+"MET": "CSCC[C@H](N)C(O)=O                                         ",
+"PHE": "N[C@@H](Cc1ccccc1)C(O)=O                                   ",
+"PRO": "OC(=O)[C@@H]1CCCN1                                         ",
+"SER": "N[C@@H](CO)C(O)=O                                          ",
+"THR": "C[C@@H](O)[C@H](N)C(O)=O                                   ",
+"TRP": "N[C@@H](Cc1c[nH]c2ccccc12)C(O)=O                           ",
+"TYR": "N[C@@H](Cc1ccc(O)cc1)C(O)=O"  
+}

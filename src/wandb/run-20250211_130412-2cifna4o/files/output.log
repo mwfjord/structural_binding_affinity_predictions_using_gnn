@@ -1,0 +1,21 @@
+Using GPU
+Traceback (most recent call last):
+  File "/home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/train.py", line 260, in <module>
+    main()
+  File "/home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/train.py", line 255, in main
+    trainer = Trainer(config, device)
+  File "/home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/train.py", line 55, in __init__
+    self.train_dataset = ProteinDNADataset(data_dir, cfg=config)
+  File "/home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/proteinDNADataset.py", line 31, in __init__
+    self.smiles_dict = self.load_smiles_lookup("./residue_smiles.json")
+TypeError: ProteinDNADataset.load_smiles_lookup() takes 1 positional argument but 2 were given
+Traceback (most recent call last):
+  File "/home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/train.py", line 260, in <module>
+    main()
+  File "/home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/train.py", line 255, in main
+    trainer = Trainer(config, device)
+  File "/home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/train.py", line 55, in __init__
+    self.train_dataset = ProteinDNADataset(data_dir, cfg=config)
+  File "/home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/proteinDNADataset.py", line 31, in __init__
+    self.smiles_dict = self.load_smiles_lookup("./residue_smiles.json")
+TypeError: ProteinDNADataset.load_smiles_lookup() takes 1 positional argument but 2 were given

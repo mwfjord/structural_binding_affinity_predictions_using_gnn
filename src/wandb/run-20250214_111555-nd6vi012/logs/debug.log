@@ -1,0 +1,29 @@
+2025-02-14 11:15:55,418 INFO    MainThread:1958301 [wandb_setup.py:_flush():68] Current SDK version is 0.19.6
+2025-02-14 11:15:55,419 INFO    MainThread:1958301 [wandb_setup.py:_flush():68] Configure stats pid to 1958301
+2025-02-14 11:15:55,419 INFO    MainThread:1958301 [wandb_setup.py:_flush():68] Loading settings from /home/marcus/.config/wandb/settings
+2025-02-14 11:15:55,419 INFO    MainThread:1958301 [wandb_setup.py:_flush():68] Loading settings from /home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/wandb/settings
+2025-02-14 11:15:55,419 INFO    MainThread:1958301 [wandb_setup.py:_flush():68] Loading settings from environment variables
+2025-02-14 11:15:55,419 INFO    MainThread:1958301 [wandb_init.py:setup_run_log_directory():637] Logging user logs to /home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/wandb/run-20250214_111555-nd6vi012/logs/debug.log
+2025-02-14 11:15:55,419 INFO    MainThread:1958301 [wandb_init.py:setup_run_log_directory():638] Logging internal logs to /home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/wandb/run-20250214_111555-nd6vi012/logs/debug-internal.log
+2025-02-14 11:15:55,419 INFO    MainThread:1958301 [wandb_init.py:init():756] calling init triggers
+2025-02-14 11:15:55,419 INFO    MainThread:1958301 [wandb_init.py:init():761] wandb.init called with sweep_config: {}
+config: {'wandb': {'project': 'structural_binding_affinity_predictions_using_gnn', 'entity': 'mwfjord', 'name': 'GNN Training', 'use_wandb': True}, 'model': {'type': 'GNN', 'layers': 3, 'hidden_units': 512, 'activation': 'leakyrelu'}, 'training': {'epochs': 3000, 'batch_size': 16, 'learning_rate': 0.001, 'optimizer': 'adam', 'seed': 42, 'T_0': 10, 'T_mult': 2, 'eta_min': 1e-06, 'warmup_epochs': 5, 'early_stop_patience': 500, 'ema_decay': 0.99}, 'dataset': {'name': 'KLF1_K_d', 'path': '../data/', 'regenerate': False, 'edge_inclusion_radius': 10, 'max_Kd': 49058.026339486, 'split_ratio': {'train': 0.8, 'validation': 0.1, 'test': 0.1}}, 'logging': {'log_interval': 10, 'save_model': True, 'save_interval': 10}, 'utility': {'device': 'cuda', 'num_workers': 4, 'pin_memory': True, 'verbose': False, 'debug': False, 'seed': 42}, '_wandb': {}}
+2025-02-14 11:15:55,419 INFO    MainThread:1958301 [wandb_init.py:init():789] starting backend
+2025-02-14 11:15:55,629 INFO    MainThread:1958301 [wandb_init.py:init():793] sending inform_init request
+2025-02-14 11:15:55,632 INFO    MainThread:1958301 [backend.py:_multiprocessing_setup():97] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2025-02-14 11:15:55,632 INFO    MainThread:1958301 [wandb_init.py:init():808] backend started and connected
+2025-02-14 11:15:55,634 INFO    MainThread:1958301 [wandb_init.py:init():901] updated telemetry
+2025-02-14 11:15:55,642 INFO    MainThread:1958301 [wandb_init.py:init():936] communicating run to backend with 90.0 second timeout
+2025-02-14 11:15:56,038 INFO    MainThread:1958301 [wandb_init.py:init():994] starting run threads in backend
+2025-02-14 11:15:56,186 INFO    MainThread:1958301 [wandb_run.py:_console_start():2385] atexit reg
+2025-02-14 11:15:56,186 INFO    MainThread:1958301 [wandb_run.py:_redirect():2235] redirect: wrap_raw
+2025-02-14 11:15:56,187 INFO    MainThread:1958301 [wandb_run.py:_redirect():2300] Wrapping output streams.
+2025-02-14 11:15:56,187 INFO    MainThread:1958301 [wandb_run.py:_redirect():2325] Redirects installed.
+2025-02-14 11:15:56,189 INFO    MainThread:1958301 [wandb_init.py:init():1036] run started, returning control to user process
+2025-02-14 11:57:45,940 INFO    MainThread:1958301 [wandb_run.py:_finish():2110] finishing run mwfjord/structural_binding_affinity_predictions_using_gnn/nd6vi012
+2025-02-14 11:57:45,941 INFO    MainThread:1958301 [wandb_run.py:_atexit_cleanup():2350] got exitcode: 0
+2025-02-14 11:57:45,941 INFO    MainThread:1958301 [wandb_run.py:_restore():2332] restore
+2025-02-14 11:57:45,941 INFO    MainThread:1958301 [wandb_run.py:_restore():2338] restore done
+2025-02-14 11:57:47,859 INFO    MainThread:1958301 [wandb_run.py:_footer_history_summary_info():3963] rendering history
+2025-02-14 11:57:47,860 INFO    MainThread:1958301 [wandb_run.py:_footer_history_summary_info():3995] rendering summary
+2025-02-14 11:57:47,860 INFO    MainThread:1958301 [wandb_run.py:_footer_sync_info():3924] logging synced files

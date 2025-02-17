@@ -1,0 +1,34 @@
+2025-02-11 13:54:33,285 INFO    MainThread:1665046 [wandb_setup.py:_flush():68] Current SDK version is 0.19.6
+2025-02-11 13:54:33,285 INFO    MainThread:1665046 [wandb_setup.py:_flush():68] Configure stats pid to 1665046
+2025-02-11 13:54:33,285 INFO    MainThread:1665046 [wandb_setup.py:_flush():68] Loading settings from /home/marcus/.config/wandb/settings
+2025-02-11 13:54:33,285 INFO    MainThread:1665046 [wandb_setup.py:_flush():68] Loading settings from /home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/wandb/settings
+2025-02-11 13:54:33,285 INFO    MainThread:1665046 [wandb_setup.py:_flush():68] Loading settings from environment variables
+2025-02-11 13:54:33,285 INFO    MainThread:1665046 [wandb_init.py:setup_run_log_directory():637] Logging user logs to /home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/wandb/run-20250211_135433-albydasf/logs/debug.log
+2025-02-11 13:54:33,285 INFO    MainThread:1665046 [wandb_init.py:setup_run_log_directory():638] Logging internal logs to /home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/wandb/run-20250211_135433-albydasf/logs/debug-internal.log
+2025-02-11 13:54:33,285 INFO    MainThread:1665046 [wandb_init.py:init():756] calling init triggers
+2025-02-11 13:54:33,285 INFO    MainThread:1665046 [wandb_init.py:init():761] wandb.init called with sweep_config: {}
+config: {'wandb': {'project': 'structural_binding_affinity_predictions_using_gnn', 'entity': 'mwfjord', 'name': 'GNN Training'}, 'model': {'type': 'GNN', 'layers': 10, 'hidden_units': 32, 'activation': 'leakyrelu'}, 'training': {'epochs': 100, 'batch_size': 16, 'learning_rate': 0.001, 'optimizer': 'adam', 'seed': 42, 'T_0': 10, 'T_mult': 2, 'eta_min': 1e-06, 'warmup_epochs': 5, 'early_stop_patience': 100, 'ema_decay': 0.99}, 'dataset': {'name': 'KLF1_K_d', 'path': '../data/', 'regenerate': True, 'edge_inclusion_radius': 10, 'max_Kd': 49058.026339486, 'split_ratio': {'train': 0.8, 'validation': 0.1, 'test': 0.1}}, 'logging': {'log_interval': 10, 'save_model': True, 'save_interval': 10}, '_wandb': {}}
+2025-02-11 13:54:33,285 INFO    MainThread:1665046 [wandb_init.py:init():789] starting backend
+2025-02-11 13:54:33,491 INFO    MainThread:1665046 [wandb_init.py:init():793] sending inform_init request
+2025-02-11 13:54:33,497 INFO    MainThread:1665046 [backend.py:_multiprocessing_setup():97] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2025-02-11 13:54:33,497 INFO    MainThread:1665046 [wandb_init.py:init():808] backend started and connected
+2025-02-11 13:54:33,499 INFO    MainThread:1665046 [wandb_init.py:init():901] updated telemetry
+2025-02-11 13:54:33,506 INFO    MainThread:1665046 [wandb_init.py:init():936] communicating run to backend with 90.0 second timeout
+2025-02-11 13:54:33,813 WARNING MainThread:1665046 [wandb_init.py:init():1475] interrupted
+Traceback (most recent call last):
+  File "/home/marcus/programming/gnn-protein-dna/lib/python3.10/site-packages/wandb/sdk/wandb_init.py", line 1471, in init
+    return wi.init(run_settings, run_config)
+  File "/home/marcus/programming/gnn-protein-dna/lib/python3.10/site-packages/wandb/sdk/wandb_init.py", line 941, in init
+    result = run_init_handle.wait(
+  File "/home/marcus/programming/gnn-protein-dna/lib/python3.10/site-packages/wandb/sdk/lib/mailbox.py", line 275, in wait
+    found, abandoned = self._slot._get_and_clear(timeout=wait_timeout)
+  File "/home/marcus/programming/gnn-protein-dna/lib/python3.10/site-packages/wandb/sdk/lib/mailbox.py", line 122, in _get_and_clear
+    if self._wait(timeout=timeout):
+  File "/home/marcus/programming/gnn-protein-dna/lib/python3.10/site-packages/wandb/sdk/lib/mailbox.py", line 118, in _wait
+    return self._event.wait(timeout=timeout)
+  File "/home/marcus/programming/gnn-protein-dna/lib/python3.10/threading.py", line 607, in wait
+    signaled = self._cond.wait(timeout)
+  File "/home/marcus/programming/gnn-protein-dna/lib/python3.10/threading.py", line 324, in wait
+    gotit = waiter.acquire(True, timeout)
+KeyboardInterrupt
+2025-02-11 13:54:33,816 WARNING MsgRouterThr:1665046 [router.py:message_loop():75] message_loop has been closed

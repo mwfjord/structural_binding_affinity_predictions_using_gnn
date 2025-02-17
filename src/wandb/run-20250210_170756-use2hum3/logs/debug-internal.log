@@ -1,0 +1,15 @@
+{"time":"2025-02-10T17:07:56.721475049+01:00","level":"INFO","msg":"stream: starting","core version":"0.19.6","symlink path":"/home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/wandb/run-20250210_170756-use2hum3/logs/debug-core.log"}
+{"time":"2025-02-10T17:07:56.832700993+01:00","level":"INFO","msg":"created new stream","id":"use2hum3"}
+{"time":"2025-02-10T17:07:56.832739255+01:00","level":"INFO","msg":"stream: started","id":"use2hum3"}
+{"time":"2025-02-10T17:07:56.832797296+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"use2hum3"}
+{"time":"2025-02-10T17:07:56.832969464+01:00","level":"INFO","msg":"sender: started","stream_id":"use2hum3"}
+{"time":"2025-02-10T17:07:56.833017555+01:00","level":"INFO","msg":"handler: started","stream_id":"use2hum3"}
+{"time":"2025-02-10T17:07:57.073157032+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-02-10T17:07:58.193742522+01:00","level":"INFO","msg":"stream: closing","id":"use2hum3"}
+{"time":"2025-02-10T17:07:58.19377291+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-02-10T17:07:58.194544669+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-02-10T17:07:58.845067287+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-02-10T17:08:00.256559284+01:00","level":"INFO","msg":"handler: closed","stream_id":"use2hum3"}
+{"time":"2025-02-10T17:08:00.256616253+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"use2hum3"}
+{"time":"2025-02-10T17:08:00.256651029+01:00","level":"INFO","msg":"sender: closed","stream_id":"use2hum3"}
+{"time":"2025-02-10T17:08:00.256704701+01:00","level":"INFO","msg":"stream: closed","id":"use2hum3"}

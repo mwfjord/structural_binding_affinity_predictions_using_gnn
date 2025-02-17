@@ -1,0 +1,11 @@
+{"time":"2025-02-10T11:19:07.819115175+01:00","level":"INFO","msg":"stream: starting","core version":"0.19.6","symlink path":"/home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/wandb/run-20250210_111907-6w5ygtck/logs/debug-core.log"}
+{"time":"2025-02-10T11:19:07.930764897+01:00","level":"INFO","msg":"created new stream","id":"6w5ygtck"}
+{"time":"2025-02-10T11:19:07.930807548+01:00","level":"INFO","msg":"stream: started","id":"6w5ygtck"}
+{"time":"2025-02-10T11:19:07.930848997+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"6w5ygtck"}
+{"time":"2025-02-10T11:19:07.93104529+01:00","level":"INFO","msg":"sender: started","stream_id":"6w5ygtck"}
+{"time":"2025-02-10T11:19:07.931041693+01:00","level":"INFO","msg":"handler: started","stream_id":"6w5ygtck"}
+{"time":"2025-02-10T11:19:08.166724381+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-02-10T11:21:41.299666447+01:00","level":"INFO","msg":"stream: closing","id":"6w5ygtck"}
+{"time":"2025-02-10T11:21:41.299701945+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-02-10T11:21:41.300297718+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-02-10T11:21:42.32767422+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}

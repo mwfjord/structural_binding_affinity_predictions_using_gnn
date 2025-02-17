@@ -1,0 +1,73 @@
+Using GPU
+TEST
+Regenerating dataset...
+TEST
+Regenerating dataset...
+TEST
+Regenerating dataset...
+/home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/proteinDNADataset.py:158: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  data = torch.load(os.path.join(self.processed_dir,
+/home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/train.py:104: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  self.scaler = torch.cuda.amp.GradScaler()
+Training:   0%|                                                                                                                                                          | 0/18 [00:00<?, ?it/s]/home/marcus/programming/gnn-protein-dna/lib/python3.10/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([16])) that is different to the input size (torch.Size([16, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/home/marcus/programming/gnn-protein-dna/lib/python3.10/site-packages/torch/optim/lr_scheduler.py:216: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  warnings.warn(
+Training:  89%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉                | 16/18 [00:01<00:00, 18.29it/s]/home/marcus/programming/gnn-protein-dna/lib/python3.10/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([1])) that is different to the input size (torch.Size([1, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Traceback (most recent call last):                                                                                                                                                              
+  File "/home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/train.py", line 260, in <module>
+    main()
+  File "/home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/train.py", line 256, in main
+    trainer.run()
+  File "/home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/train.py", line 179, in run
+    train_loss = self.train_epoch(epoch)
+  File "/home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/train.py", line 124, in train_epoch
+    out = self.model(data.x, data.edge_index, data.batch)
+  File "/home/marcus/programming/gnn-protein-dna/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/marcus/programming/gnn-protein-dna/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/model.py", line 46, in forward
+    x = self.activation(conv(x, edge_index))
+  File "/home/marcus/programming/gnn-protein-dna/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/marcus/programming/gnn-protein-dna/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/marcus/programming/gnn-protein-dna/lib/python3.10/site-packages/torch_geometric/nn/conv/gcn_conv.py", line 241, in forward
+    edge_index, edge_weight = gcn_norm(  # yapf: disable
+  File "/home/marcus/programming/gnn-protein-dna/lib/python3.10/site-packages/torch_geometric/nn/conv/gcn_conv.py", line 99, in gcn_norm
+    edge_index, edge_weight = add_remaining_self_loops(
+  File "/home/marcus/programming/gnn-protein-dna/lib/python3.10/site-packages/torch_geometric/utils/loop.py", line 652, in add_remaining_self_loops
+    if not torch.jit.is_scripting() and isinstance(edge_index, EdgeIndex):
+  File "/home/marcus/programming/gnn-protein-dna/lib/python3.10/site-packages/torch/_jit_internal.py", line 1130, in is_scripting
+    def is_scripting() -> bool:
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/train.py", line 260, in <module>
+    main()
+  File "/home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/train.py", line 256, in main
+    trainer.run()
+  File "/home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/train.py", line 179, in run
+    train_loss = self.train_epoch(epoch)
+  File "/home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/train.py", line 124, in train_epoch
+    out = self.model(data.x, data.edge_index, data.batch)
+  File "/home/marcus/programming/gnn-protein-dna/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/marcus/programming/gnn-protein-dna/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/model.py", line 46, in forward
+    x = self.activation(conv(x, edge_index))
+  File "/home/marcus/programming/gnn-protein-dna/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/marcus/programming/gnn-protein-dna/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/marcus/programming/gnn-protein-dna/lib/python3.10/site-packages/torch_geometric/nn/conv/gcn_conv.py", line 241, in forward
+    edge_index, edge_weight = gcn_norm(  # yapf: disable
+  File "/home/marcus/programming/gnn-protein-dna/lib/python3.10/site-packages/torch_geometric/nn/conv/gcn_conv.py", line 99, in gcn_norm
+    edge_index, edge_weight = add_remaining_self_loops(
+  File "/home/marcus/programming/gnn-protein-dna/lib/python3.10/site-packages/torch_geometric/utils/loop.py", line 652, in add_remaining_self_loops
+    if not torch.jit.is_scripting() and isinstance(edge_index, EdgeIndex):
+  File "/home/marcus/programming/gnn-protein-dna/lib/python3.10/site-packages/torch/_jit_internal.py", line 1130, in is_scripting
+    def is_scripting() -> bool:
+KeyboardInterrupt

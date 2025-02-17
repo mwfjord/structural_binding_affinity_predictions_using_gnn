@@ -1,0 +1,299 @@
+Using GPU
+Regenerating dataset...
+Processing...
+SMILES for ALA: C[C@H](N)C(O)=O
+0it [00:00, ?it/s]
+(2048,)
+<Vector -18.64, 0.79, -12.19>
+(2048,)
+<Vector -15.93, 2.83, -10.34>
+(2048,)
+<Vector -14.80, -0.72, -9.18>
+(2048,)
+<Vector -15.72, -0.99, -15.43>
+(2048,)
+<Vector -14.80, 4.07, -15.27>
+(2048,)
+<Vector -10.42, 1.37, -13.37>
+(2048,)
+<Vector -10.50, -3.24, -15.74>
+(2048,)
+<Vector -11.57, 0.13, -18.92>
+(2048,)
+<Vector -8.48, 4.27, -16.07>
+(2048,)
+<Vector -5.78, -1.60, -17.26>
+(2048,)
+<Vector -7.28, -2.81, -20.79>
+(2048,)
+<Vector -6.55, 2.62, -21.98>
+(2048,)
+<Vector -3.26, 3.72, -20.13>
+(2048,)
+<Vector -6.41, 6.88, -18.55>
+(2048,)
+<Vector -1.44, 6.72, -16.19>
+(2048,)
+<Vector -5.42, 10.37, -14.57>
+(2048,)
+<Vector -5.48, 9.98, -10.72>
+(2048,)
+<Vector -0.35, 13.18, -11.36>
+(2048,)
+<Vector 2.89, 13.44, -9.01>
+(2048,)
+<Vector 2.27, 17.19, -7.44>
+(2048,)
+<Vector 7.59, 15.97, -4.36>
+(2048,)
+<Vector 9.86, 19.78, -7.78>
+(2048,)
+<Vector 10.44, 15.93, -10.58>
+(2048,)
+<Vector 7.74, 13.42, -10.14>
+(2048,)
+<Vector 6.69, 11.74, -13.47>
+(2048,)
+<Vector 6.25, 7.35, -11.44>
+(2048,)
+<Vector 0.81, 10.29, -15.32>
+(2048,)
+<Vector -0.01, 6.66, -10.52>
+(2048,)
+<Vector -4.93, 4.97, -12.76>
+(2048,)
+<Vector -6.14, 2.96, -8.47>
+(2048,)
+<Vector -6.35, 7.85, -6.29>
+(2048,)
+<Vector -5.23, 4.37, -4.46>
+(2048,)
+<Vector -2.03, 3.75, -7.44>
+(2048,)
+<Vector -0.98, 9.42, -6.23>
+(2048,)
+<Vector -1.96, 8.49, -1.91>
+(2048,)
+<Vector 0.80, 3.12, -2.73>
+(2048,)
+<Vector 4.30, 7.81, -5.26>
+(2048,)
+<Vector 2.97, 12.78, -2.09>
+(2048,)
+<Vector 2.09, 7.46, 2.05>
+(2048,)
+<Vector 8.81, 7.76, -2.25>
+(2048,)
+<Vector 7.92, 11.93, -2.60>
+(2048,)
+<Vector 6.21, 12.72, 2.64>
+(2048,)
+<Vector 7.92, 9.91, 4.78>
+(2048,)
+<Vector 3.33, 9.45, 5.78>
+(2048,)
+<Vector 7.81, 5.51, 7.72>
+(2048,)
+<Vector 1.39, 5.43, 8.87>
+(2048,)
+<Vector 0.93, 1.73, 8.34>
+(2048,)
+<Vector 4.18, 3.91, 14.14>
+(2048,)
+<Vector 5.45, -1.77, 15.26>
+(2048,)
+<Vector 2.77, -1.73, 18.54>
+(2048,)
+<Vector 6.48, -5.62, 19.03>
+(2048,)
+<Vector 9.37, -2.30, 17.12>
+(2048,)
+<Vector 11.03, 1.07, 16.81>
+(2048,)
+<Vector 11.65, -1.36, 12.19>
+(2048,)
+<Vector 7.75, 2.38, 10.56>
+(2048,)
+<Vector 6.73, -0.10, 8.10>
+(2048,)
+<Vector 4.43, 3.26, 4.01>
+(2048,)
+<Vector 2.80, -0.48, 1.54>
+(2048,)
+<Vector -0.22, -2.33, 5.49>
+(2048,)
+<Vector 1.82, -4.50, 2.79>
+(2048,)
+<Vector 5.55, -3.06, 3.44>
+(2048,)
+<Vector 3.39, -3.73, 9.41>
+(2048,)
+<Vector 2.49, -7.58, 7.88>
+(2048,)
+<Vector 6.27, -8.95, 5.76>
+(2048,)
+<Vector 8.07, -6.31, 10.75>
+(2048,)
+<Vector 4.51, -8.33, 12.69>
+(2048,)
+<Vector 4.81, -12.74, 9.01>
+(2048,)
+<Vector 10.65, -10.42, 9.43>
+(2048,)
+<Vector 8.49, -9.66, 15.53>
+(2048,)
+<Vector 6.54, -15.02, 14.76>
+(2048,)
+<Vector -44.21, 21.45, -6.18>
+(2048,)
+<Vector -41.47, 19.67, -2.44>
+(2048,)
+<Vector -39.52, 15.87, 0.15>
+(2048,)
+<Vector -37.55, 11.76, 1.08>
+(2048,)
+<Vector -35.37, 7.75, 0.18>
+(2048,)
+<Vector -32.87, 4.36, -1.85>
+(2048,)
+<Vector -29.14, 3.58, -4.97>
+(2048,)
+<Vector -25.26, 3.55, -7.57>
+(2048,)
+<Vector -20.66, 5.59, -7.68>
+(2048,)
+<Vector -16.48, 7.12, -6.70>
+(2048,)
+<Vector -12.77, 7.67, -3.95>
+(2048,)
+<Vector -10.15, 5.31, -0.36>
+(2048,)
+<Vector -7.89, 1.79, 1.70>
+(2048,)
+<Vector -6.14, -2.68, 2.88>
+(2048,)
+<Vector -4.08, -6.59, 1.53>
+(2048,)
+<Vector -1.45, -10.00, -1.30>
+(2048,)
+<Vector 1.84, -11.23, -5.01>
+(2048,)
+<Vector 5.67, -10.53, -7.76>
+(2048,)
+<Vector 9.89, -7.61, -8.80>
+(2048,)
+<Vector 13.90, -5.20, -8.41>
+(2048,)
+<Vector 17.72, -3.28, -5.85>
+(2048,)
+<Vector 21.12, -2.36, -2.97>
+(2048,)
+<Vector 23.76, -3.41, 0.92>
+(2048,)
+<Vector 25.85, -6.47, 4.43>
+(2048,)
+<Vector 28.06, -10.87, 5.01>
+(2048,)
+<Vector 30.42, -14.67, 5.26>
+(2048,)
+<Vector 33.36, -17.91, 2.97>
+(2048,)
+<Vector 37.28, -18.59, 0.08>
+(2048,)
+<Vector 41.49, -17.79, -1.86>
+(2048,)
+<Vector 43.43, -10.13, 5.78>
+(2048,)
+<Vector 40.86, -8.33, 1.93>
+(2048,)
+<Vector 37.54, -9.14, -1.84>
+(2048,)
+<Vector 33.95, -10.35, -4.24>
+(2048,)
+<Vector 29.95, -12.42, -5.54>
+(2048,)
+<Vector 25.55, -13.73, -3.59>
+(2048,)
+<Vector 21.54, -13.94, -1.41>
+(2048,)
+<Vector 18.10, -12.18, 1.00>
+(2048,)
+<Vector 15.09, -9.40, 2.93>
+(2048,)
+<Vector 12.96, -4.88, 2.58>
+(2048,)
+<Vector 10.64, -1.71, 0.77>
+(2048,)
+<Vector 7.66, -0.44, -3.44>
+(2048,)
+<Vector 4.25, -0.63, -7.17>
+(2048,)
+<Vector 0.55, -2.54, -9.44>
+(2048,)
+<Vector -3.51, -3.92, -9.53>
+(2048,)
+<Vector -7.77, -6.26, -7.53>
+(2048,)
+<Vector -11.37, -6.59, -5.18>
+(2048,)
+<Vector -14.43, -5.09, -1.45>
+(2048,)
+<Vector -16.40, -1.23, 1.73>
+(2048,)
+<Vector -18.44, 2.60, 3.37>
+(2048,)
+<Vector -20.22, 7.40, 2.99>
+(2048,)
+<Vector -22.38, 10.77, -0.02>
+(2048,)
+<Vector -24.74, 13.41, -2.67>
+(2048,)
+<Vector -28.29, 13.09, -6.33>
+(2048,)
+<Vector -31.85, 12.73, -8.99>
+(2048,)
+<Vector -36.24, 10.81, -9.80>
+(2048,)
+<Vector -40.67, 9.27, -8.60>
+(2048,)
+<Vector -44.58, 9.56, -5.51>
+(2048,)
+<Vector -47.74, 11.61, -2.72>
+  return torch.tensor(residue_features, dtype=torch.float), torch.tensor(pos, dtype=torch.float)
+0it [00:00, ?it/s]
+Traceback (most recent call last):
+  File "/home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/train.py", line 260, in <module>
+    main()
+  File "/home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/train.py", line 255, in main
+    trainer = Trainer(config, device)
+  File "/home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/train.py", line 55, in __init__
+    self.train_dataset = ProteinDNADataset(data_dir, cfg=config)
+  File "/home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/proteinDNADataset.py", line 48, in __init__
+    super(ProteinDNADataset, self).__init__(self.root_dir, transform, pre_transform)
+  File "/home/marcus/programming/gnn-protein-dna/lib/python3.10/site-packages/torch_geometric/data/dataset.py", line 115, in __init__
+    self._process()
+  File "/home/marcus/programming/gnn-protein-dna/lib/python3.10/site-packages/torch_geometric/data/dataset.py", line 262, in _process
+    self.process()
+  File "/home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/proteinDNADataset.py", line 160, in process
+    atom_features, pos = self._get_node_features(structure)
+  File "/home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/proteinDNADataset.py", line 99, in _get_node_features
+    return torch.tensor(residue_features, dtype=torch.float), torch.tensor(pos, dtype=torch.float)
+TypeError: object of type 'Vector' has no len()
+Traceback (most recent call last):
+  File "/home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/train.py", line 260, in <module>
+    main()
+  File "/home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/train.py", line 255, in main
+    trainer = Trainer(config, device)
+  File "/home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/train.py", line 55, in __init__
+    self.train_dataset = ProteinDNADataset(data_dir, cfg=config)
+  File "/home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/proteinDNADataset.py", line 48, in __init__
+    super(ProteinDNADataset, self).__init__(self.root_dir, transform, pre_transform)
+  File "/home/marcus/programming/gnn-protein-dna/lib/python3.10/site-packages/torch_geometric/data/dataset.py", line 115, in __init__
+    self._process()
+  File "/home/marcus/programming/gnn-protein-dna/lib/python3.10/site-packages/torch_geometric/data/dataset.py", line 262, in _process
+    self.process()
+  File "/home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/proteinDNADataset.py", line 160, in process
+    atom_features, pos = self._get_node_features(structure)
+  File "/home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/proteinDNADataset.py", line 99, in _get_node_features
+    return torch.tensor(residue_features, dtype=torch.float), torch.tensor(pos, dtype=torch.float)
+TypeError: object of type 'Vector' has no len()

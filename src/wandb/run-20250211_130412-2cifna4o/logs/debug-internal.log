@@ -1,0 +1,15 @@
+{"time":"2025-02-11T13:04:12.971490656+01:00","level":"INFO","msg":"stream: starting","core version":"0.19.6","symlink path":"/home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/wandb/run-20250211_130412-2cifna4o/logs/debug-core.log"}
+{"time":"2025-02-11T13:04:13.082673334+01:00","level":"INFO","msg":"created new stream","id":"2cifna4o"}
+{"time":"2025-02-11T13:04:13.082714111+01:00","level":"INFO","msg":"stream: started","id":"2cifna4o"}
+{"time":"2025-02-11T13:04:13.082766581+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"2cifna4o"}
+{"time":"2025-02-11T13:04:13.082949058+01:00","level":"INFO","msg":"handler: started","stream_id":"2cifna4o"}
+{"time":"2025-02-11T13:04:13.083005135+01:00","level":"INFO","msg":"sender: started","stream_id":"2cifna4o"}
+{"time":"2025-02-11T13:04:13.315164564+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-02-11T13:04:13.522568598+01:00","level":"INFO","msg":"stream: closing","id":"2cifna4o"}
+{"time":"2025-02-11T13:04:13.522597453+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-02-11T13:04:13.52311607+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-02-11T13:04:14.537483502+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-02-11T13:04:15.288912806+01:00","level":"INFO","msg":"handler: closed","stream_id":"2cifna4o"}
+{"time":"2025-02-11T13:04:15.288986045+01:00","level":"INFO","msg":"sender: closed","stream_id":"2cifna4o"}
+{"time":"2025-02-11T13:04:15.288976638+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"2cifna4o"}
+{"time":"2025-02-11T13:04:15.289086366+01:00","level":"INFO","msg":"stream: closed","id":"2cifna4o"}

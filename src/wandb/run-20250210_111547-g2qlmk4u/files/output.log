@@ -1,0 +1,34 @@
+Using GPU
+Regenerating dataset...
+Regenerating dataset...
+Regenerating dataset...
+/home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/proteinDNADataset.py:145: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  data = torch.load(os.path.join(self.processed_dir,
+/home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/train.py:104: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  self.scaler = torch.cuda.amp.GradScaler()
+Traceback (most recent call last):                                                                                                                                                              
+  File "/home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/train.py", line 258, in <module>
+    main()
+  File "/home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/train.py", line 254, in main
+    trainer.run()
+  File "/home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/train.py", line 178, in run
+    train_loss = self.train_epoch(epoch)
+  File "/home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/train.py", line 124, in train_epoch
+    out = self.model(data.x, data.edge_index, data.batch)
+  File "/home/marcus/programming/gnn-protein-dna/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/marcus/programming/gnn-protein-dna/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/model.py", line 46, in forward
+    x = self.activation(conv(x, edge_index))
+  File "/home/marcus/programming/gnn-protein-dna/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/marcus/programming/gnn-protein-dna/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/marcus/programming/gnn-protein-dna/lib/python3.10/site-packages/torch_geometric/nn/conv/gcn_conv.py", line 263, in forward
+    out = self.propagate(edge_index, x=x, edge_weight=edge_weight)
+  File "/tmp/torch_geometric.nn.conv.gcn_conv_GCNConv_propagate_vn9tm0ql.py", line 209, in propagate
+    out = self.message(
+  File "/home/marcus/programming/gnn-protein-dna/lib/python3.10/site-packages/torch_geometric/nn/conv/gcn_conv.py", line 271, in message
+    return x_j if edge_weight is None else edge_weight.view(-1, 1) * x_j
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 2.81 GiB. GPU 0 has a total capacity of 10.75 GiB of which 2.55 GiB is free. Process 1263687 has 3.42 GiB memory in use. Including non-PyTorch memory, this process has 4.77 GiB memory in use. Of the allocated memory 1.90 GiB is allocated by PyTorch, and 2.68 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)

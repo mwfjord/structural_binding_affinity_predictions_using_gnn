@@ -1,0 +1,40 @@
+Using GPU
+Regenerating dataset...
+Processing...
+0it [00:00, ?it/s]
+Traceback (most recent call last):
+  File "/home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/train.py", line 260, in <module>
+    main()
+  File "/home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/train.py", line 255, in main
+    trainer = Trainer(config, device)
+  File "/home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/train.py", line 55, in __init__
+    self.train_dataset = ProteinDNADataset(data_dir, cfg=config)
+  File "/home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/proteinDNADataset.py", line 42, in __init__
+    super(ProteinDNADataset, self).__init__(self.root_dir, transform, pre_transform)
+  File "/home/marcus/programming/gnn-protein-dna/lib/python3.10/site-packages/torch_geometric/data/dataset.py", line 115, in __init__
+    self._process()
+  File "/home/marcus/programming/gnn-protein-dna/lib/python3.10/site-packages/torch_geometric/data/dataset.py", line 262, in _process
+    self.process()
+  File "/home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/proteinDNADataset.py", line 145, in process
+    atom_type, pos = self._get_node_features(structure)
+  File "/home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/proteinDNADataset.py", line 91, in _get_node_features
+    return torch.tensor(atom_features, dtype=torch.float), torch.tensor(pos, dtype=torch.float)
+ValueError: too many dimensions 'str'
+Traceback (most recent call last):
+  File "/home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/train.py", line 260, in <module>
+    main()
+  File "/home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/train.py", line 255, in main
+    trainer = Trainer(config, device)
+  File "/home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/train.py", line 55, in __init__
+    self.train_dataset = ProteinDNADataset(data_dir, cfg=config)
+  File "/home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/proteinDNADataset.py", line 42, in __init__
+    super(ProteinDNADataset, self).__init__(self.root_dir, transform, pre_transform)
+  File "/home/marcus/programming/gnn-protein-dna/lib/python3.10/site-packages/torch_geometric/data/dataset.py", line 115, in __init__
+    self._process()
+  File "/home/marcus/programming/gnn-protein-dna/lib/python3.10/site-packages/torch_geometric/data/dataset.py", line 262, in _process
+    self.process()
+  File "/home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/proteinDNADataset.py", line 145, in process
+    atom_type, pos = self._get_node_features(structure)
+  File "/home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/proteinDNADataset.py", line 91, in _get_node_features
+    return torch.tensor(atom_features, dtype=torch.float), torch.tensor(pos, dtype=torch.float)
+ValueError: too many dimensions 'str'

@@ -1,0 +1,48 @@
+Using GPU
+Regenerating dataset...
+Processing...
+0it [00:00, ?it/s]
+Traceback (most recent call last):
+  File "/home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/train.py", line 260, in <module>
+    main()
+  File "/home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/train.py", line 255, in main
+    trainer = Trainer(config, device)
+  File "/home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/train.py", line 55, in __init__
+    self.train_dataset = ProteinDNADataset(data_dir, cfg=config)
+  File "/home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/proteinDNADataset.py", line 43, in __init__
+    super(ProteinDNADataset, self).__init__(self.root_dir, transform, pre_transform)
+  File "/home/marcus/programming/gnn-protein-dna/lib/python3.10/site-packages/torch_geometric/data/dataset.py", line 115, in __init__
+    self._process()
+  File "/home/marcus/programming/gnn-protein-dna/lib/python3.10/site-packages/torch_geometric/data/dataset.py", line 262, in _process
+    self.process()
+  File "/home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/proteinDNADataset.py", line 157, in process
+    structure = MMCIF2Dict("file_path")
+  File "/home/marcus/programming/gnn-protein-dna/lib/python3.10/site-packages/Bio/PDB/MMCIF2Dict.py", line 25, in __init__
+    with as_handle(filename) as handle:
+  File "/home/marcus/programming/gnn-protein-dna/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/home/marcus/programming/gnn-protein-dna/lib/python3.10/site-packages/Bio/File.py", line 72, in as_handle
+    with open(handleish, mode, **kwargs) as fp:
+FileNotFoundError: [Errno 2] No such file or directory: 'file_path'
+Traceback (most recent call last):
+  File "/home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/train.py", line 260, in <module>
+    main()
+  File "/home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/train.py", line 255, in main
+    trainer = Trainer(config, device)
+  File "/home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/train.py", line 55, in __init__
+    self.train_dataset = ProteinDNADataset(data_dir, cfg=config)
+  File "/home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/proteinDNADataset.py", line 43, in __init__
+    super(ProteinDNADataset, self).__init__(self.root_dir, transform, pre_transform)
+  File "/home/marcus/programming/gnn-protein-dna/lib/python3.10/site-packages/torch_geometric/data/dataset.py", line 115, in __init__
+    self._process()
+  File "/home/marcus/programming/gnn-protein-dna/lib/python3.10/site-packages/torch_geometric/data/dataset.py", line 262, in _process
+    self.process()
+  File "/home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/proteinDNADataset.py", line 157, in process
+    structure = MMCIF2Dict("file_path")
+  File "/home/marcus/programming/gnn-protein-dna/lib/python3.10/site-packages/Bio/PDB/MMCIF2Dict.py", line 25, in __init__
+    with as_handle(filename) as handle:
+  File "/home/marcus/programming/gnn-protein-dna/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/home/marcus/programming/gnn-protein-dna/lib/python3.10/site-packages/Bio/File.py", line 72, in as_handle
+    with open(handleish, mode, **kwargs) as fp:
+FileNotFoundError: [Errno 2] No such file or directory: 'file_path'
