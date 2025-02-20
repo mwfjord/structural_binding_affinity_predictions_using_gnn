@@ -9,7 +9,7 @@ from tqdm import tqdm
 from torch import nn
 from torch_geometric.loader import DataLoader
 from mango import scheduler, Tuner
-from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, roc_auc_score
+from sklearn.metrics import mean_squared_error, root_mean_squared_error
 from zmq import device
 
 # Import your custom dataset and model modules
@@ -32,78 +32,28 @@ class Trainer:
         self.config_dict = omegaconf.OmegaConf.to_container(config, resolve=True)
         self.device = device
         data_dir = config.dataset.path
-        self.hyperparameters = config.parameters
+        self.hyperparameters = config.hyperparameters
         
         # Initialize datasets and dataloaders
         self.train_dataset = PDDataset(data_dir, cfg=config)
         self.val_dataset = PDDataset(data_dir, validation=True, cfg=config)
         self.test_dataset = PDDataset(data_dir, test=True, cfg=config)
         
-        self.max_Kd = self.config.dataset.max_Kd
+        self.max_Kd = self.config.dataset.max_logKd
+
+        self.criterion = self.RMSELoss
 
         # Print samples of dataset.
-        if config.utility.verbose:
+        if config.utility.verbose.data:
             for data in self.train_dataset:
                 print(f"x: {data.x.shape}, edge_index: {data.edge_index.shape}")
 
-
-        self.train_loader = DataLoader(
-            self.train_dataset,
-            batch_size=self.hyperparameters.batch_size,
-            shuffle=True
-        )
-        self.val_loader = DataLoader(
-            self.val_dataset,
-            batch_size=self.hyperparameters.batch_size,
-            shuffle=False
-        )
-        self.test_loader = DataLoader(
-            self.test_dataset,
-            batch_size=self.hyperparameters.batch_size,
-            shuffle=False
-        )
-
-        # Initialize the model.
-        # Note: Adjust `input_dim` if necessary; here we use the dataset's num_node_features.
-
-        self.model = ProteinDNAGNN(
-            input_dim=self.train_dataset.num_node_features,
-            hidden_dim=config.model.hidden_units,
-            cfg=config
-        ).to(device)
-
-        # Set up optimizer and loss function.
-        self.optimizer = torch.optim.SGD(self.model.parameters(), lr=config.training.learning_rate)
-        self.criterion = self.RMSELoss
-        # self.criterion = self.PearsonCorrelation
-
-        # Main learning rate scheduler: CosineAnnealingWarmRestarts.
-        self.scheduler = torch.optim.lr_scheduler.CosineAnnealingWarmRestarts(
-            self.optimizer,
-            T_0=config.training.get("T_0", 10),
-            T_mult=config.training.get("T_mult", 2),
-            eta_min=config.training.get("eta_min", 1e-6)
-        )
-
-        # Optional warmup scheduler.
-        self.warmup_epochs = config.training.get("warmup_epochs", 0)
-        if self.warmup_epochs > 0:
-            self.warmup_scheduler = torch.optim.lr_scheduler.LinearLR(
-                self.optimizer, start_factor=0.1, total_iters=self.warmup_epochs
-            )
-        else:
-            self.warmup_scheduler = None
-
-        # Initialize AMP scaler for mixed precision training.
-        self.scaler = torch.amp.GradScaler()
-
-        # Initialize EMA for model weights.
-        self.ema = EMA(self.model, decay=config.training.get("ema_decay", 0.99))
-
+        self.update_params_to_best()
+       
         # Early stopping parameters.
         self.best_val_loss = float('inf')
         self.early_stop_counter = 0
-        self.early_stop_patience = config.training.get("early_stop_patience", 10)
+        self.early_stop_patience = config.trainer.get("early_stop_patience", 10)
         
         self.use_wandb = config.wandb.get("use_wandb", False)
 
@@ -125,37 +75,25 @@ class Trainer:
         for batch_idx, data in enumerate(tqdm(self.train_loader, desc="Training", leave=False, unit="it")):
             data = data.to(self.device)
             self.optimizer.zero_grad()
-            # print("This is the data: ", data)
 
             with torch.amp.autocast(device_type='cuda'):
-                out = self.model(data.x, data.edge_index, data.batch)
-                out = out.squeeze()  # Remove unnecessary dimension for MSE loss.
+                out = self.model(data.x, data.edge_attr, data.edge_index, data.batch)
+                out = out.squeeze()  # Remove unnecessary dimension for RMSE loss.
                 data.y = data.y.squeeze()
                 loss = self.criterion(out, data.y)
 
-            self.scaler.scale(loss).backward()
+            loss.backward()
+            self.optimizer.step()
 
-            # Gradient clipping to stabilize training.
-            self.scaler.unscale_(self.optimizer)
-            torch.nn.utils.clip_grad_norm_(self.model.parameters(), max_norm=1.0)
-
-            self.scaler.step(self.optimizer)
-            self.scaler.update()
-
-            # Update EMA weights after each optimizer step.
-            self.ema.update(self.model)
+            # Check if prediction is nan
+            if torch.isnan(out).any():
+                print("Prediction is nan for batch", batch_idx)
+                print("Batch data", data)
+                raise ValueError("Prediction is nan")
 
             total_loss += loss.item()
 
-            # Scheduler update:
-            if self.warmup_scheduler is not None and epoch <= self.warmup_epochs:
-                # During warmup, update the warmup scheduler per batch.
-                self.warmup_scheduler.step()
-            else:
-                # Update the cosine annealing scheduler using fractional epoch progress.
-                current_iter = epoch - 1 + (batch_idx + 1) / num_batches
-                self.scheduler.step(current_iter)
-
+        self.scheduler.step()
         return total_loss / num_batches
 
     def validate_epoch(self):
@@ -165,8 +103,8 @@ class Trainer:
             for data in tqdm(self.val_loader, desc="Validation", leave=False):
                 data = data.to(self.device)
                 with torch.amp.autocast(device_type='cuda'):
-                    out = self.model(data.x, data.edge_index, data.batch)
-                    out = out.squeeze()  # Remove unnecessary dimension for MSE loss.
+                    out = self.model(data.x, data.edge_attr , data.edge_index, data.batch)
+                    out = out.squeeze()  # Remove unnecessary dimension for RMSE loss.
                     data.y = data.y.squeeze()
                     loss = self.criterion(out, data.y)
                 total_loss += loss.item()
@@ -185,12 +123,16 @@ class Trainer:
     
     def update_params_to_best(self):
         best_params = self.config_dict["best_params"]
-        self.model = ProteinDNAGNN(input_dim=self.train_dataset.num_node_features, model_params=best_params)
-        self.model = self.model.to(device)
+        self.model = ProteinDNAGNN(input_dim=self.train_dataset.num_node_features, model_params=best_params, config=self.config)
+        self.model = self.model.to(self.device)
         self.optimizer = torch.optim.SGD(self.model.parameters(), lr=best_params["learning_rate"])
         self.scheduler = torch.optim.lr_scheduler.ExponentialLR(self.optimizer, gamma=best_params["scheduler_gamma"])
 
     def run_tuning(self, params):
+        params = params[0]
+
+        if self.config.utility.verbose.hyperparameters:
+            print(f"Hyperparameters: {params}")
 
         self.train_loader = DataLoader(
             self.train_dataset,
@@ -198,17 +140,17 @@ class Trainer:
             shuffle=True
         )
         self.val_loader = DataLoader(
-                self.validation_dataset,
+                self.val_dataset,
                 batch_size=params["batch_size"],
                 shuffle=False
             )
     
         model_params = {k: v for k, v in params.items() if k.startswith("model_")}
-        model = ProteinDNAGNN(input_dim=self.train_dataset.num_node_features, model_params=model_params) 
-        model = model.to(device)
+        self.model = ProteinDNAGNN(input_dim=self.train_dataset.num_node_features, model_params=model_params, config=self.config) 
+        self.model = self.model.to(self.device)
 
         # < 1 increases precision, > 1 recall
-        self.optimizer = torch.optim.SGD(model.parameters(), 
+        self.optimizer = torch.optim.SGD(self.model.parameters(), 
                                     lr=params["learning_rate"],
                                     momentum=params["sgd_momentum"],
                                     weight_decay=params["weight_decay"])
@@ -217,7 +159,7 @@ class Trainer:
         
         # Start training
         self.run()
-        return self.best_val_loss
+        return [self.best_val_loss]
 
     def tune_hyperparameters(self):
 
@@ -237,7 +179,7 @@ class Trainer:
 
 
     def run(self):
-        epochs = self.config.training.epochs
+        epochs = self.config.trainer.epochs
         log_interval = self.config.logging.log_interval
         for epoch in range(1, epochs + 1):
             train_loss = self.train_epoch(epoch)
@@ -461,7 +403,7 @@ def main():
     trainer = Trainer(config, device)
     trainer.tune_hyperparameters()
     trainer.update_params_to_best()
-    
+
 
     # trainer.run()
 

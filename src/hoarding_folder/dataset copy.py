@@ -1,11 +1,23 @@
+import dis
+from platform import node
+from turtle import distance
+from matplotlib.pyplot import bone
 import torch
+from htmd.ui import *
+from moleculekit.bondguesser import *
 import omegaconf
 import os
 from torch_geometric.data import Data, Dataset
+import json
 import pandas as pd
 from tqdm import tqdm
 import numpy as np
-from complex import Complex
+# from torch_geometric.utils import radius_graph
+
+
+
+
+
 
 
 
@@ -85,6 +97,53 @@ class PDDataset(Dataset):
             print("No label file found. Generating random labels...")
         return labels
 
+    def create_graph_features(self, file_path):
+        """
+        Creates node features, edge features and edge index for a given .cif file.
+        """
+        mol = Molecule(file_path)
+        # mol = systemPrepare(mol)
+        # mol = autoSegment(mol)
+        # mol = solvate(mol)
+        Molecule.guessBonds(mol)
+        # mol.wrap()
+        node_features = torch.tensor([], dtype=torch.float32)
+        edge_features = torch.tensor([], dtype=torch.float32)        
+        # Neighbor list (2, num_edges)
+        edge_index = torch.tensor([], dtype=torch.long)
+        bonds_count = 0
+        for i in range(mol.numAtoms):
+            atom_encoding = self.atom_to_onehot(mol.element[i])
+            atom_charge = mol.charge[i]
+            atom_pos = mol.coords[i]
+            for bond in mol.bonds[i]:
+                bonds_count += 1
+                edge_index = torch.cat((edge_index, torch.tensor([[i, bond]], dtype=torch.long).T), dim=1)
+                distance = np.linalg.norm(atom_pos - mol.coords[bond])
+                distance = 1/(1+(distance/10))
+                edge_features = torch.cat((edge_features, torch.tensor([distance], dtype=torch.float32)))
+
+
+            node_features = torch.cat((node_features, torch.tensor([atom_encoding + [atom_charge] + list(atom_pos)], dtype=torch.float32)))
+
+        if self.cfg.utility.verbose:
+            print(f"\nNumber of bonds: {bonds_count}")
+            print("Data dimensions: ", node_features.shape, edge_index.shape, edge_features.shape)
+
+        return node_features, edge_index, edge_features
+
+
+
+
+    def atom_to_onehot(self, atom_name):
+        # Convert residue names to one-hot vectors for amino acids and DNA bases
+        if atom_name in self.unique_atoms:
+            index = self.unique_atoms.index(atom_name)
+            onehot = [0] * len(self.unique_atoms)
+            onehot[index] = 1
+            return onehot
+        else:
+            return [0] * len(self.unique_atoms)
     
     def process(self):
         """
@@ -95,14 +154,11 @@ class PDDataset(Dataset):
         for index, file in tqdm(enumerate(self.files)):
             sequence = file.split('.')[0]
             file_path = os.path.join(self.root_dir, "raw", file)
-            
-            pdb = Complex(file_path)
-            edge_index = pdb._get_edges()
-            edge_features = pdb._get_edge_features()
-            node_features = pdb._get_node_features()
+            node_features, edge_index, edge_features = self.create_graph_features(file_path)
             label = self._get_label(sequence)
-            
+            # edge_features = graph_data["edge_features"]
             data = Data(x=node_features, edge_index=edge_index, edge_attr=edge_features, y=label)
+            # validate_graph(data)
             if self.test:
                 torch.save(data, 
                     os.path.join(self.processed_dir, 
@@ -127,7 +183,10 @@ class PDDataset(Dataset):
                                  f'data_{idx}.pt'))   
         return data
     
+    def load_lookup(self, file_path):
+        with open(file_path, "r") as f:
+            return json.load(f)
 
 
-cfg = omegaconf.OmegaConf.load("../utils/config.yaml")
-data_set = PDDataset(root_dir="../data", test=False, validation=False, cfg=cfg)
+# cfg = omegaconf.OmegaConf.load("config.yaml")
+# data_set = PDDataset(root_dir="../data", test=False, validation=False, cfg=cfg)

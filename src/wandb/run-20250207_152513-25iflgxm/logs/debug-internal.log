@@ -1,7 +1,0 @@
-{"time":"2025-02-07T15:25:15.297907636+01:00","level":"INFO","msg":"stream: starting","core version":"0.19.6","symlink path":"/home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/wandb/run-20250207_152513-25iflgxm/logs/debug-core.log"}
-{"time":"2025-02-07T15:25:15.40968321+01:00","level":"INFO","msg":"created new stream","id":"25iflgxm"}
-{"time":"2025-02-07T15:25:15.410174595+01:00","level":"INFO","msg":"stream: started","id":"25iflgxm"}
-{"time":"2025-02-07T15:25:15.41019838+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"25iflgxm"}
-{"time":"2025-02-07T15:25:15.410250239+01:00","level":"INFO","msg":"handler: started","stream_id":"25iflgxm"}
-{"time":"2025-02-07T15:25:15.410269526+01:00","level":"INFO","msg":"sender: started","stream_id":"25iflgxm"}
-{"time":"2025-02-07T15:25:15.632369133+01:00","level":"INFO","msg":"Starting system monitor"}

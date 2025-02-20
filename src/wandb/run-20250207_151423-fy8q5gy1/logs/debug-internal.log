@@ -1,6 +1,0 @@
-{"time":"2025-02-07T15:14:23.458204039+01:00","level":"INFO","msg":"stream: starting","core version":"0.19.6","symlink path":"/home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/wandb/run-20250207_151423-fy8q5gy1/logs/debug-core.log"}
-{"time":"2025-02-07T15:14:23.570663436+01:00","level":"INFO","msg":"created new stream","id":"fy8q5gy1"}
-{"time":"2025-02-07T15:14:23.57072837+01:00","level":"INFO","msg":"stream: started","id":"fy8q5gy1"}
-{"time":"2025-02-07T15:14:23.57077598+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"fy8q5gy1"}
-{"time":"2025-02-07T15:14:23.570815415+01:00","level":"INFO","msg":"handler: started","stream_id":"fy8q5gy1"}
-{"time":"2025-02-07T15:14:23.570782673+01:00","level":"INFO","msg":"sender: started","stream_id":"fy8q5gy1"}

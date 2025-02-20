@@ -1,3 +1,4 @@
 ./data/train/processed/
 ./data/test/processed/
 ./data/val/processed/
+./wandb/

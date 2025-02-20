@@ -1,8 +1,0 @@
-/home/marcus/programming/gnn-protein-dna/lib/python3.10/site-packages/tqdm/auto.py:21: TqdmWarning: IProgress not found. Please update jupyter and ipywidgets. See https://ipywidgets.readthedocs.io/en/stable/user_install.html
-  from .autonotebook import tqdm as notebook_tqdm
-Root dir:  ../data/train
-PWD:  /home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src
-Label file:  ../data/train/binding_affinity.csv
-No label file found. Generating random labels...
-Processing...
-  0%|          | 0/273 [00:00<?, ?it/s]

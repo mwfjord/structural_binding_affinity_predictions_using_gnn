@@ -4,7 +4,7 @@ from torch_geometric.nn import GCNConv, global_mean_pool as gap, global_max_pool
 import torch.nn as nn
 
 class ProteinDNAGNN(torch.nn.Module):
-    def __init__(self, input_dim, config):
+    def __init__(self, input_dim, model_params, config):
         """
         Args:
             input_dim (int): Dimension of input node features.
@@ -14,7 +14,6 @@ class ProteinDNAGNN(torch.nn.Module):
         """
         super(ProteinDNAGNN, self).__init__()
 
-        model_params = config["best_params"]
         # Retrieve model configuration or set defaults.
         self.num_layers = model_params["model_layers"]
         embedding_size = model_params["model_embedding_size"]
@@ -22,7 +21,7 @@ class ProteinDNAGNN(torch.nn.Module):
         self.top_k_every_n = model_params["model_top_k_every_n"]
         # dropout_rate = model_params["model_dropout_rate"]
         dense_neurons = model_params["model_dense_neurons"]
-        self.prediction_threshold = config["dataset"]["max_Kd"]
+        self.prediction_threshold = config["dataset"]["max_logKd"]
 
         self.conv1 = GCNConv(input_dim, embedding_size)
         self.transf1 = nn.Linear(embedding_size, embedding_size)
@@ -70,7 +69,7 @@ class ProteinDNAGNN(torch.nn.Module):
         x = torch.relu(self.linear2(x))
         x = F.dropout(x, p=0.8, training=self.training)
         x = self.linear3(x)
-
-        x = max(x, torch.tensor([self.prediction_threshold], dtype=torch.float32).to(x.device))
-
+        # tensor_threshold = torch.tensor([self.prediction_threshold], dtype=torch.float32)
+        # tensor_threshold = tensor_threshold.to(x.device)
+        # x = torch.min(tensor_threshold, x)
         return x
