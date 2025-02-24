@@ -1,3 +1,4 @@
+from attr import validate
 import torch
 import omegaconf
 import os
@@ -6,7 +7,6 @@ import pandas as pd
 from tqdm import tqdm
 import numpy as np
 from complex import Complex
-
 
 
 class PDDataset(Dataset):
@@ -20,7 +20,7 @@ class PDDataset(Dataset):
         self.cfg = cfg
         self.regenerate = cfg.dataset.get("regenerate", False) if cfg is not None else False
         # self.smiles_dict = self.load_lookup("./residue_smiles.json")
-        self.unique_atoms = self.load_lookup("./uniqueAtoms.json")
+        # self.unique_atoms = self.load_lookup("./uniqueAtoms.json")
         
 
         if self.regenerate:
@@ -36,7 +36,8 @@ class PDDataset(Dataset):
         raw_dir = os.path.join(self.root_dir, "raw")
         processed_dir = os.path.join(self.root_dir, "processed")
         self.files = [f for f in os.listdir(raw_dir) if f.endswith(".cif")]
-        self.labels = self.load_labels()  
+        self.labels = self.load_labels()
+        
         super(PDDataset, self).__init__(self.root_dir, transform, pre_transform)
         
     @property
@@ -79,13 +80,13 @@ class PDDataset(Dataset):
             for col, row in df.iterrows():
                 log_K_d = np.log(row["KD"], dtype=np.float32)
                 log_K_d = torch.tensor(log_K_d, dtype=torch.float32)
-                # print(log_K_d)
                 labels[row["origSequence_name"]] = log_K_d
         else:
             print("No label file found. Generating random labels...")
         return labels
 
-    
+
+        
     def process(self):
         """
         Parses a .cif file and converts it into a PyTorch Geometric graph.
@@ -97,8 +98,8 @@ class PDDataset(Dataset):
             file_path = os.path.join(self.root_dir, "raw", file)
             
             pdb = Complex(file_path)
-            edge_index = pdb._get_edges()
-            edge_features = pdb._get_edge_features()
+            edge_index = pdb._get_edge_index()
+            edge_features = pdb._get_edge_attr()
             node_features = pdb._get_node_features()
             label = self._get_label(sequence)
             
@@ -121,13 +122,13 @@ class PDDataset(Dataset):
         """
         if self.test:
             data = torch.load(os.path.join(self.processed_dir, 
-                                 f'data_test_{idx}.pt'))
+                                 f'data_test_{idx}.pt'), weights_only=False)
         else:
             data = torch.load(os.path.join(self.processed_dir, 
-                                 f'data_{idx}.pt'))   
+                                 f'data_{idx}.pt'), weights_only=False)   
         return data
     
 
 
-cfg = omegaconf.OmegaConf.load("../utils/config.yaml")
-data_set = PDDataset(root_dir="../data", test=False, validation=False, cfg=cfg)
+# cfg = omegaconf.OmegaConf.load("../utils/config.yaml")
+# data_set = PDDataset(root_dir="../data", test=False, validation=False, cfg=cfg)

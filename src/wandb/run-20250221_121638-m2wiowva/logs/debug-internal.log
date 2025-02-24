@@ -1,0 +1,7 @@
+{"time":"2025-02-21T12:16:39.075688739+01:00","level":"INFO","msg":"stream: starting","core version":"0.19.6","symlink path":"/home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/wandb/run-20250221_121638-m2wiowva/logs/debug-core.log"}
+{"time":"2025-02-21T12:16:39.187036882+01:00","level":"INFO","msg":"created new stream","id":"m2wiowva"}
+{"time":"2025-02-21T12:16:39.187476349+01:00","level":"INFO","msg":"stream: started","id":"m2wiowva"}
+{"time":"2025-02-21T12:16:39.18755546+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"m2wiowva"}
+{"time":"2025-02-21T12:16:39.18757653+01:00","level":"INFO","msg":"sender: started","stream_id":"m2wiowva"}
+{"time":"2025-02-21T12:16:39.187630052+01:00","level":"INFO","msg":"handler: started","stream_id":"m2wiowva"}
+{"time":"2025-02-21T12:16:39.516335905+01:00","level":"INFO","msg":"Starting system monitor"}

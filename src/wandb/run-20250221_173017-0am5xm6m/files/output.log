@@ -1,0 +1,378 @@
+Using GPU 3
+Hyperparameters: {'weight_decay': 0.0001, 'sgd_momentum': 0.9, 'scheduler_gamma': 0.995, 'model_top_k_ratio': 0.9, 'model_top_k_every_n': 1, 'model_layers': 3, 'model_embedding_size': 32, 'model_dense_neurons': 64, 'learning_rate': 0.001, 'batch_size': 32}
+                                                                                                                                                                                                                                      
+Epoch 10: Train Loss = 5.2562, Val Loss = 5.0966
+Epoch 20: Train Loss = 4.7083, Val Loss = 4.1880
+Epoch 30: Train Loss = 4.4860, Val Loss = 3.7123
+Epoch 40: Train Loss = 4.5254, Val Loss = 3.9189
+Epoch 50: Train Loss = 4.2241, Val Loss = 3.4662
+Epoch 60: Train Loss = 3.9744, Val Loss = 3.2370
+Epoch 70: Train Loss = 3.6311, Val Loss = 3.2587
+Epoch 80: Train Loss = 3.7032, Val Loss = 3.1846
+Epoch 90: Train Loss = 3.7361, Val Loss = 3.1449
+Epoch 100: Train Loss = 3.8156, Val Loss = 2.9439
+Epoch 110: Train Loss = 3.4461, Val Loss = 2.9507
+Epoch 120: Train Loss = 3.4415, Val Loss = 2.9361
+Epoch 130: Train Loss = 3.3379, Val Loss = 2.8290
+Epoch 140: Train Loss = 3.0827, Val Loss = 2.6358
+Epoch 150: Train Loss = 3.1439, Val Loss = 2.7488
+Epoch 160: Train Loss = 3.1656, Val Loss = 2.6811
+Epoch 170: Train Loss = 3.0150, Val Loss = 2.5505
+Epoch 180: Train Loss = 3.0501, Val Loss = 2.6112
+Epoch 190: Train Loss = 2.9020, Val Loss = 2.6412
+Epoch 200: Train Loss = 2.9882, Val Loss = 2.6672
+Epoch 210: Train Loss = 2.8511, Val Loss = 2.5902
+Epoch 220: Train Loss = 3.0072, Val Loss = 2.7238
+Epoch 230: Train Loss = 2.8183, Val Loss = 2.6330
+Epoch 240: Train Loss = 2.8696, Val Loss = 2.5353
+Epoch 250: Train Loss = 2.7268, Val Loss = 2.5446
+Epoch 260: Train Loss = 2.8143, Val Loss = 2.5633
+Epoch 270: Train Loss = 2.7316, Val Loss = 2.5403
+Epoch 280: Train Loss = 2.6927, Val Loss = 2.5077
+Epoch 290: Train Loss = 2.6779, Val Loss = 2.4822
+Epoch 300: Train Loss = 2.8091, Val Loss = 2.4841
+Epoch 310: Train Loss = 2.5518, Val Loss = 2.4532
+Epoch 320: Train Loss = 2.6856, Val Loss = 2.5087
+Epoch 330: Train Loss = 2.6776, Val Loss = 2.4542
+Epoch 340: Train Loss = 2.7181, Val Loss = 2.4938
+Epoch 350: Train Loss = 2.5509, Val Loss = 2.4811
+Epoch 360: Train Loss = 2.6021, Val Loss = 2.4329
+Epoch 370: Train Loss = 2.6323, Val Loss = 2.5043
+Epoch 380: Train Loss = 2.5185, Val Loss = 2.4644
+Epoch 390: Train Loss = 2.5710, Val Loss = 2.4414
+Epoch 400: Train Loss = 2.6504, Val Loss = 2.4416
+Epoch 410: Train Loss = 2.5864, Val Loss = 2.4455
+Epoch 420: Train Loss = 2.4726, Val Loss = 2.4098
+Epoch 430: Train Loss = 2.5467, Val Loss = 2.3868
+Epoch 440: Train Loss = 2.5370, Val Loss = 2.4146
+Epoch 450: Train Loss = 2.4874, Val Loss = 2.4530
+Epoch 460: Train Loss = 2.5360, Val Loss = 2.4026
+Epoch 470: Train Loss = 2.4667, Val Loss = 2.3936
+Epoch 480: Train Loss = 2.4364, Val Loss = 2.3998
+Epoch 490: Train Loss = 2.4898, Val Loss = 2.4356
+Epoch 500: Train Loss = 2.4182, Val Loss = 2.4293
+Epoch 510: Train Loss = 2.5588, Val Loss = 2.4289
+Epoch 520: Train Loss = 2.6025, Val Loss = 2.4009
+Epoch 530: Train Loss = 2.4158, Val Loss = 2.4284
+Early stopping triggered.
+Hyperparameters: {'batch_size': 32, 'learning_rate': 0.1, 'model_dense_neurons': 16, 'model_embedding_size': 128, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.9, 'scheduler_gamma': 0.995, 'sgd_momentum': 0.8, 'weight_decay': 0.001}
+                                                                                                                                                                                                                                      
+Epoch 10: Train Loss = 2.5195, Val Loss = 2.3273
+Epoch 20: Train Loss = 2.5075, Val Loss = 2.3315
+Epoch 30: Train Loss = 2.5336, Val Loss = 2.3341
+Epoch 40: Train Loss = 2.5158, Val Loss = 2.3320
+Epoch 50: Train Loss = 2.5074, Val Loss = 2.3290
+Epoch 60: Train Loss = 2.5106, Val Loss = 2.3315
+Epoch 70: Train Loss = 2.4700, Val Loss = 2.3372
+Epoch 80: Train Loss = 2.4996, Val Loss = 2.3315
+Epoch 90: Train Loss = 2.5083, Val Loss = 2.3284
+Epoch 100: Train Loss = 2.5045, Val Loss = 2.3299
+Epoch 110: Train Loss = 2.4584, Val Loss = 2.3299
+Early stopping triggered.
+Hyperparameters: {'batch_size': 64, 'learning_rate': 0.1, 'model_dense_neurons': 64, 'model_embedding_size': 16, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.9, 'scheduler_gamma': 1, 'sgd_momentum': 0.5, 'weight_decay': 1e-05}
+Epoch 10: Train Loss = 3.0067, Val Loss = 2.4977
+Early stopping triggered.
+Hyperparameters: {'batch_size': 64, 'learning_rate': 0.05, 'model_dense_neurons': 32, 'model_embedding_size': 64, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.8, 'scheduler_gamma': 0.995, 'sgd_momentum': 0.9, 'weight_decay': 0.001}
+Epoch 10: Train Loss = 2.5073, Val Loss = 2.3006
+Epoch 20: Train Loss = 2.5970, Val Loss = 2.3188
+Epoch 30: Train Loss = 2.4069, Val Loss = 2.3293
+Epoch 40: Train Loss = 2.5420, Val Loss = 2.3293
+Epoch 50: Train Loss = 2.5335, Val Loss = 2.3256
+Epoch 60: Train Loss = 2.5172, Val Loss = 2.3268
+Epoch 70: Train Loss = 2.5278, Val Loss = 2.3333
+Epoch 80: Train Loss = 2.4796, Val Loss = 2.3113
+Epoch 90: Train Loss = 2.4983, Val Loss = 2.3199
+Epoch 100: Train Loss = 2.4405, Val Loss = 2.3210
+Epoch 110: Train Loss = 2.5953, Val Loss = 2.3481
+Early stopping triggered.
+Hyperparameters: {'batch_size': 32, 'learning_rate': 0.01, 'model_dense_neurons': 64, 'model_embedding_size': 32, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.8, 'scheduler_gamma': 0.5, 'sgd_momentum': 0.5, 'weight_decay': 1e-05}
+Epoch 10: Train Loss = 6.0630, Val Loss = 5.4276
+Early stopping triggered.
+Hyperparameters: {'batch_size': 64, 'learning_rate': 0.05, 'model_dense_neurons': 32, 'model_embedding_size': 64, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.8, 'scheduler_gamma': 0.9, 'sgd_momentum': 0.9, 'weight_decay': 0.001}
+Epoch 10: Train Loss = 2.6421, Val Loss = 2.4583
+Early stopping triggered.
+Hyperparameters: {'batch_size': 64, 'learning_rate': 0.05, 'model_dense_neurons': 32, 'model_embedding_size': 64, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.9, 'scheduler_gamma': 0.8, 'sgd_momentum': 0.9, 'weight_decay': 0.001}
+Epoch 10: Train Loss = 3.4641, Val Loss = 2.9208
+Early stopping triggered.
+Hyperparameters: {'batch_size': 64, 'learning_rate': 0.05, 'model_dense_neurons': 32, 'model_embedding_size': 64, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.2, 'scheduler_gamma': 0.5, 'sgd_momentum': 0.8, 'weight_decay': 0.001}
+Epoch 10: Train Loss = 6.4281, Val Loss = 6.9936
+Early stopping triggered.
+Hyperparameters: {'batch_size': 32, 'learning_rate': 0.05, 'model_dense_neurons': 128, 'model_embedding_size': 128, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.9, 'scheduler_gamma': 0.9, 'sgd_momentum': 0.9, 'weight_decay': 1e-05}
+Epoch 10: Train Loss = nan, Val Loss = nan
+Early stopping triggered.
+Hyperparameters: {'batch_size': 32, 'learning_rate': 0.001, 'model_dense_neurons': 256, 'model_embedding_size': 64, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.8, 'scheduler_gamma': 0.8, 'sgd_momentum': 0.9, 'weight_decay': 0.001}
+Epoch 10: Train Loss = 4.2868, Val Loss = 4.4281
+Early stopping triggered.
+Hyperparameters: {'batch_size': 64, 'learning_rate': 0.1, 'model_dense_neurons': 128, 'model_embedding_size': 16, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.8, 'scheduler_gamma': 0.8, 'sgd_momentum': 0.5, 'weight_decay': 0.0001}
+Epoch 10: Train Loss = nan, Val Loss = nan
+Early stopping triggered.
+Hyperparameters: {'batch_size': 128, 'learning_rate': 0.1, 'model_dense_neurons': 32, 'model_embedding_size': 32, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.2, 'scheduler_gamma': 0.995, 'sgd_momentum': 0.9, 'weight_decay': 0.001}
+Epoch 10: Train Loss = 2.9476, Val Loss = nan
+Early stopping triggered.
+Hyperparameters: {'batch_size': 64, 'learning_rate': 0.1, 'model_dense_neurons': 32, 'model_embedding_size': 64, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.5, 'scheduler_gamma': 0.5, 'sgd_momentum': 0.9, 'weight_decay': 0.0001}
+Epoch 10: Train Loss = 4.5102, Val Loss = 4.6625
+Early stopping triggered.
+Hyperparameters: {'batch_size': 64, 'learning_rate': 0.01, 'model_dense_neurons': 64, 'model_embedding_size': 32, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.2, 'scheduler_gamma': 0.5, 'sgd_momentum': 0.8, 'weight_decay': 1e-05}
+Epoch 10: Train Loss = 6.6743, Val Loss = 6.9339
+Early stopping triggered.
+Hyperparameters: {'batch_size': 64, 'learning_rate': 0.05, 'model_dense_neurons': 32, 'model_embedding_size': 8, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.2, 'scheduler_gamma': 0.5, 'sgd_momentum': 0.8, 'weight_decay': 1e-05}
+Epoch 10: Train Loss = 6.0824, Val Loss = 6.1472
+Early stopping triggered.
+Hyperparameters: {'batch_size': 64, 'learning_rate': 0.001, 'model_dense_neurons': 32, 'model_embedding_size': 64, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.2, 'scheduler_gamma': 1, 'sgd_momentum': 0.9, 'weight_decay': 1e-05}
+Epoch 10: Train Loss = 6.8239, Val Loss = 5.8535
+Early stopping triggered.
+Hyperparameters: {'batch_size': 64, 'learning_rate': 0.001, 'model_dense_neurons': 32, 'model_embedding_size': 64, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.8, 'scheduler_gamma': 0.8, 'sgd_momentum': 0.8, 'weight_decay': 0.0001}
+Epoch 10: Train Loss = 7.7008, Val Loss = 7.9552
+Early stopping triggered.
+Hyperparameters: {'batch_size': 32, 'learning_rate': 0.001, 'model_dense_neurons': 64, 'model_embedding_size': 128, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.2, 'scheduler_gamma': 0.995, 'sgd_momentum': 0.8, 'weight_decay': 0.0001}
+Epoch 10: Train Loss = 5.5427, Val Loss = 4.8566
+Early stopping triggered.
+Hyperparameters: {'batch_size': 64, 'learning_rate': 0.01, 'model_dense_neurons': 32, 'model_embedding_size': 64, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.9, 'scheduler_gamma': 0.995, 'sgd_momentum': 0.5, 'weight_decay': 1e-05}
+Epoch 10: Train Loss = 6.6126, Val Loss = 6.5907
+Early stopping triggered.
+Hyperparameters: {'batch_size': 128, 'learning_rate': 0.01, 'model_dense_neurons': 32, 'model_embedding_size': 32, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.5, 'scheduler_gamma': 0.8, 'sgd_momentum': 0.8, 'weight_decay': 1e-05}
+Epoch 10: Train Loss = 6.8364, Val Loss = 6.9334
+Early stopping triggered.
+Hyperparameters: {'batch_size': 64, 'learning_rate': 0.05, 'model_dense_neurons': 16, 'model_embedding_size': 64, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.5, 'scheduler_gamma': 0.995, 'sgd_momentum': 0.8, 'weight_decay': 0.001}
+Epoch 10: Train Loss = 2.6859, Val Loss = 2.4514
+Early stopping triggered.
+Hyperparameters: {'batch_size': 128, 'learning_rate': 0.05, 'model_dense_neurons': 32, 'model_embedding_size': 32, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.9, 'scheduler_gamma': 1, 'sgd_momentum': 0.5, 'weight_decay': 0.0001}
+Epoch 10: Train Loss = 6.7092, Val Loss = 6.4289
+Early stopping triggered.
+Hyperparameters: {'batch_size': 128, 'learning_rate': 0.001, 'model_dense_neurons': 32, 'model_embedding_size': 32, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.8, 'scheduler_gamma': 0.9, 'sgd_momentum': 0.8, 'weight_decay': 0.0001}
+Epoch 10: Train Loss = 8.0511, Val Loss = 8.5149
+Early stopping triggered.
+Hyperparameters: {'batch_size': 64, 'learning_rate': 0.001, 'model_dense_neurons': 16, 'model_embedding_size': 64, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.8, 'scheduler_gamma': 0.5, 'sgd_momentum': 0.9, 'weight_decay': 0.0001}
+Epoch 10: Train Loss = 8.5063, Val Loss = 8.8506
+Early stopping triggered.
+Hyperparameters: {'batch_size': 32, 'learning_rate': 0.1, 'model_dense_neurons': 128, 'model_embedding_size': 128, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.5, 'scheduler_gamma': 0.8, 'sgd_momentum': 0.9, 'weight_decay': 0.001}
+Epoch 10: Train Loss = nan, Val Loss = nan
+Early stopping triggered.
+Hyperparameters: {'batch_size': 64, 'learning_rate': 0.01, 'model_dense_neurons': 16, 'model_embedding_size': 64, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.9, 'scheduler_gamma': 0.8, 'sgd_momentum': 0.5, 'weight_decay': 1e-05}
+Epoch 10: Train Loss = 7.1591, Val Loss = 7.4283
+Early stopping triggered.
+Hyperparameters: {'batch_size': 32, 'learning_rate': 0.001, 'model_dense_neurons': 128, 'model_embedding_size': 128, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.8, 'scheduler_gamma': 1, 'sgd_momentum': 0.5, 'weight_decay': 0.0001}
+Epoch 10: Train Loss = 5.8534, Val Loss = 5.3992
+Early stopping triggered.
+Hyperparameters: {'batch_size': 32, 'learning_rate': 0.1, 'model_dense_neurons': 16, 'model_embedding_size': 128, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.5, 'scheduler_gamma': 0.995, 'sgd_momentum': 0.8, 'weight_decay': 1e-05}
+Epoch 10: Train Loss = 2.5387, Val Loss = 2.3335
+Early stopping triggered.
+Hyperparameters: {'batch_size': 32, 'learning_rate': 0.1, 'model_dense_neurons': 64, 'model_embedding_size': 64, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.8, 'scheduler_gamma': 0.995, 'sgd_momentum': 0.8, 'weight_decay': 0.0001}
+Epoch 10: Train Loss = nan, Val Loss = nan
+Early stopping triggered.
+Hyperparameters: {'batch_size': 32, 'learning_rate': 0.01, 'model_dense_neurons': 128, 'model_embedding_size': 128, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.2, 'scheduler_gamma': 0.995, 'sgd_momentum': 0.8, 'weight_decay': 1e-05}
+Epoch 10: Train Loss = 5.3151, Val Loss = 4.2056
+Early stopping triggered.
+Hyperparameters: {'batch_size': 64, 'learning_rate': 0.1, 'model_dense_neurons': 16, 'model_embedding_size': 64, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.2, 'scheduler_gamma': 1, 'sgd_momentum': 0.9, 'weight_decay': 0.001}
+Epoch 10: Train Loss = 2.4896, Val Loss = 2.3389
+Early stopping triggered.
+Hyperparameters: {'batch_size': 64, 'learning_rate': 0.01, 'model_dense_neurons': 128, 'model_embedding_size': 16, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.2, 'scheduler_gamma': 0.5, 'sgd_momentum': 0.8, 'weight_decay': 0.001}
+Epoch 10: Train Loss = 4.7756, Val Loss = 5.2269
+Early stopping triggered.
+Hyperparameters: {'batch_size': 64, 'learning_rate': 0.05, 'model_dense_neurons': 128, 'model_embedding_size': 16, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.9, 'scheduler_gamma': 0.9, 'sgd_momentum': 0.9, 'weight_decay': 1e-05}
+Epoch 10: Train Loss = 2.7676, Val Loss = 2.9386
+Early stopping triggered.
+Hyperparameters: {'batch_size': 32, 'learning_rate': 0.01, 'model_dense_neurons': 64, 'model_embedding_size': 128, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.5, 'scheduler_gamma': 0.9, 'sgd_momentum': 0.9, 'weight_decay': 1e-05}
+Epoch 10: Train Loss = 4.8676, Val Loss = 4.4831
+Early stopping triggered.
+Hyperparameters: {'batch_size': 32, 'learning_rate': 0.1, 'model_dense_neurons': 64, 'model_embedding_size': 128, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.8, 'scheduler_gamma': 1, 'sgd_momentum': 0.5, 'weight_decay': 0.001}
+Epoch 10: Train Loss = 2.7133, Val Loss = 2.3417
+Early stopping triggered.
+Hyperparameters: {'batch_size': 32, 'learning_rate': 0.05, 'model_dense_neurons': 256, 'model_embedding_size': 64, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.5, 'scheduler_gamma': 1, 'sgd_momentum': 0.5, 'weight_decay': 1e-05}
+Epoch 10: Train Loss = 3.5293, Val Loss = 3.0070
+Early stopping triggered.
+Hyperparameters: {'batch_size': 32, 'learning_rate': 0.1, 'model_dense_neurons': 256, 'model_embedding_size': 64, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.9, 'scheduler_gamma': 0.9, 'sgd_momentum': 0.8, 'weight_decay': 0.0001}
+Epoch 10: Train Loss = nan, Val Loss = nan
+Early stopping triggered.
+Hyperparameters: {'batch_size': 64, 'learning_rate': 0.001, 'model_dense_neurons': 32, 'model_embedding_size': 8, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.9, 'scheduler_gamma': 0.995, 'sgd_momentum': 0.5, 'weight_decay': 0.001}
+Epoch 10: Train Loss = 8.0161, Val Loss = 8.3064
+Early stopping triggered.
+Hyperparameters: {'batch_size': 64, 'learning_rate': 0.1, 'model_dense_neurons': 32, 'model_embedding_size': 8, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.8, 'scheduler_gamma': 1, 'sgd_momentum': 0.9, 'weight_decay': 0.0001}
+Epoch 10: Train Loss = 2.5055, Val Loss = 2.3346
+Early stopping triggered.
+Hyperparameters: {'batch_size': 32, 'learning_rate': 0.05, 'model_dense_neurons': 64, 'model_embedding_size': 64, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.5, 'scheduler_gamma': 1, 'sgd_momentum': 0.9, 'weight_decay': 1e-05}
+Epoch 10: Train Loss = nan, Val Loss = nan
+Early stopping triggered.
+Hyperparameters: {'batch_size': 32, 'learning_rate': 0.01, 'model_dense_neurons': 64, 'model_embedding_size': 64, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.2, 'scheduler_gamma': 0.9, 'sgd_momentum': 0.5, 'weight_decay': 0.001}
+Epoch 10: Train Loss = 5.1105, Val Loss = 5.2917
+Early stopping triggered.
+Hyperparameters: {'batch_size': 64, 'learning_rate': 0.001, 'model_dense_neurons': 64, 'model_embedding_size': 32, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.8, 'scheduler_gamma': 0.8, 'sgd_momentum': 0.9, 'weight_decay': 0.001}
+Epoch 10: Train Loss = 5.6846, Val Loss = 5.7509
+Early stopping triggered.
+Hyperparameters: {'batch_size': 32, 'learning_rate': 0.05, 'model_dense_neurons': 16, 'model_embedding_size': 128, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.8, 'scheduler_gamma': 0.995, 'sgd_momentum': 0.9, 'weight_decay': 1e-05}
+Epoch 10: Train Loss = 2.4980, Val Loss = 2.3410
+Early stopping triggered.
+Hyperparameters: {'batch_size': 64, 'learning_rate': 0.05, 'model_dense_neurons': 64, 'model_embedding_size': 32, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.5, 'scheduler_gamma': 0.9, 'sgd_momentum': 0.5, 'weight_decay': 0.0001}
+Epoch 10: Train Loss = 4.5948, Val Loss = 3.7481
+Early stopping triggered.
+Hyperparameters: {'batch_size': 64, 'learning_rate': 0.05, 'model_dense_neurons': 128, 'model_embedding_size': 8, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.9, 'scheduler_gamma': 0.9, 'sgd_momentum': 0.9, 'weight_decay': 1e-05}
+Epoch 10: Train Loss = nan, Val Loss = nan
+Early stopping triggered.
+Hyperparameters: {'batch_size': 64, 'learning_rate': 0.1, 'model_dense_neurons': 64, 'model_embedding_size': 8, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.2, 'scheduler_gamma': 0.8, 'sgd_momentum': 0.9, 'weight_decay': 1e-05}
+Epoch 10: Train Loss = nan, Val Loss = nan
+Early stopping triggered.
+Hyperparameters: {'batch_size': 64, 'learning_rate': 0.1, 'model_dense_neurons': 128, 'model_embedding_size': 8, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.8, 'scheduler_gamma': 0.8, 'sgd_momentum': 0.5, 'weight_decay': 0.0001}
+Epoch 10: Train Loss = 4.2911, Val Loss = 3.9020
+Early stopping triggered.
+Hyperparameters: {'batch_size': 64, 'learning_rate': 0.1, 'model_dense_neurons': 256, 'model_embedding_size': 32, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.8, 'scheduler_gamma': 1, 'sgd_momentum': 0.9, 'weight_decay': 0.001}
+Epoch 10: Train Loss = nan, Val Loss = nan
+Early stopping triggered.
+Hyperparameters: {'batch_size': 64, 'learning_rate': 0.01, 'model_dense_neurons': 128, 'model_embedding_size': 8, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.2, 'scheduler_gamma': 0.5, 'sgd_momentum': 0.8, 'weight_decay': 0.001}
+Epoch 10: Train Loss = 5.6001, Val Loss = 6.0336
+Early stopping triggered.
+Hyperparameters: {'batch_size': 64, 'learning_rate': 0.001, 'model_dense_neurons': 256, 'model_embedding_size': 32, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.9, 'scheduler_gamma': 0.9, 'sgd_momentum': 0.5, 'weight_decay': 1e-05}
+Epoch 10: Train Loss = 5.2189, Val Loss = 5.5783
+Early stopping triggered.
+Hyperparameters: {'batch_size': 64, 'learning_rate': 0.05, 'model_dense_neurons': 256, 'model_embedding_size': 32, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.5, 'scheduler_gamma': 0.995, 'sgd_momentum': 0.8, 'weight_decay': 0.0001}
+Epoch 10: Train Loss = nan, Val Loss = nan
+Early stopping triggered.
+Hyperparameters: {'batch_size': 64, 'learning_rate': 0.01, 'model_dense_neurons': 64, 'model_embedding_size': 8, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.5, 'scheduler_gamma': 0.5, 'sgd_momentum': 0.8, 'weight_decay': 0.0001}
+Epoch 10: Train Loss = 6.1652, Val Loss = 6.7781
+Early stopping triggered.
+Hyperparameters: {'batch_size': 64, 'learning_rate': 0.05, 'model_dense_neurons': 64, 'model_embedding_size': 8, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.8, 'scheduler_gamma': 0.9, 'sgd_momentum': 0.5, 'weight_decay': 0.001}
+Epoch 10: Train Loss = 4.9650, Val Loss = 4.9169
+Early stopping triggered.
+Hyperparameters: {'batch_size': 64, 'learning_rate': 0.1, 'model_dense_neurons': 32, 'model_embedding_size': 16, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.8, 'scheduler_gamma': 1, 'sgd_momentum': 0.9, 'weight_decay': 0.0001}
+Epoch 10: Train Loss = nan, Val Loss = nan
+Early stopping triggered.
+Hyperparameters: {'batch_size': 64, 'learning_rate': 0.001, 'model_dense_neurons': 32, 'model_embedding_size': 16, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.9, 'scheduler_gamma': 0.995, 'sgd_momentum': 0.5, 'weight_decay': 0.001}
+Epoch 10: Train Loss = 8.3061, Val Loss = 8.5604
+Early stopping triggered.
+Hyperparameters: {'batch_size': 64, 'learning_rate': 0.05, 'model_dense_neurons': 32, 'model_embedding_size': 16, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.2, 'scheduler_gamma': 0.5, 'sgd_momentum': 0.8, 'weight_decay': 1e-05}
+Epoch 10: Train Loss = 5.6928, Val Loss = 6.4120
+Early stopping triggered.
+Hyperparameters: {'batch_size': 128, 'learning_rate': 0.001, 'model_dense_neurons': 32, 'model_embedding_size': 16, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.8, 'scheduler_gamma': 0.9, 'sgd_momentum': 0.8, 'weight_decay': 0.0001}
+Epoch 10: Train Loss = 8.6297, Val Loss = 8.8809
+Early stopping triggered.
+Hyperparameters: {'batch_size': 128, 'learning_rate': 0.1, 'model_dense_neurons': 32, 'model_embedding_size': 16, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.2, 'scheduler_gamma': 0.995, 'sgd_momentum': 0.9, 'weight_decay': 0.001}
+Epoch 10: Train Loss = nan, Val Loss = nan
+Early stopping triggered.
+Hyperparameters: {'batch_size': 128, 'learning_rate': 0.01, 'model_dense_neurons': 32, 'model_embedding_size': 16, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.5, 'scheduler_gamma': 0.8, 'sgd_momentum': 0.5, 'weight_decay': 1e-05}
+Epoch 10: Train Loss = 6.7825, Val Loss = 7.4477
+Early stopping triggered.
+Hyperparameters: {'batch_size': 128, 'learning_rate': 0.01, 'model_dense_neurons': 32, 'model_embedding_size': 8, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.5, 'scheduler_gamma': 0.8, 'sgd_momentum': 0.5, 'weight_decay': 1e-05}
+Epoch 10: Train Loss = 7.4534, Val Loss = 8.0729
+Early stopping triggered.
+Hyperparameters: {'batch_size': 128, 'learning_rate': 0.1, 'model_dense_neurons': 32, 'model_embedding_size': 8, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.2, 'scheduler_gamma': 0.995, 'sgd_momentum': 0.9, 'weight_decay': 0.001}
+Epoch 10: Train Loss = nan, Val Loss = nan
+Early stopping triggered.
+Hyperparameters: {'batch_size': 128, 'learning_rate': 0.001, 'model_dense_neurons': 32, 'model_embedding_size': 8, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.8, 'scheduler_gamma': 0.9, 'sgd_momentum': 0.8, 'weight_decay': 0.0001}
+Epoch 10: Train Loss = 8.2464, Val Loss = 8.6579
+Early stopping triggered.
+Hyperparameters: {'batch_size': 128, 'learning_rate': 0.001, 'model_dense_neurons': 16, 'model_embedding_size': 32, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.8, 'scheduler_gamma': 0.9, 'sgd_momentum': 0.8, 'weight_decay': 0.0001}
+Epoch 10: Train Loss = 8.2160, Val Loss = 8.3948
+Early stopping triggered.
+Hyperparameters: {'batch_size': 128, 'learning_rate': 0.1, 'model_dense_neurons': 16, 'model_embedding_size': 32, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.2, 'scheduler_gamma': 0.995, 'sgd_momentum': 0.9, 'weight_decay': 0.001}
+Epoch 10: Train Loss = 3.1175, Val Loss = 2.7729
+Early stopping triggered.
+Hyperparameters: {'batch_size': 128, 'learning_rate': 0.01, 'model_dense_neurons': 16, 'model_embedding_size': 32, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.5, 'scheduler_gamma': 0.8, 'sgd_momentum': 0.5, 'weight_decay': 1e-05}
+Epoch 10: Train Loss = 7.9847, Val Loss = 8.1855
+Early stopping triggered.
+Hyperparameters: {'batch_size': 128, 'learning_rate': 0.001, 'model_dense_neurons': 16, 'model_embedding_size': 16, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.8, 'scheduler_gamma': 0.9, 'sgd_momentum': 0.8, 'weight_decay': 0.0001}
+Epoch 10: Train Loss = 8.5723, Val Loss = 8.8760
+Early stopping triggered.
+Hyperparameters: {'batch_size': 128, 'learning_rate': 0.01, 'model_dense_neurons': 16, 'model_embedding_size': 16, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.5, 'scheduler_gamma': 0.8, 'sgd_momentum': 0.5, 'weight_decay': 1e-05}
+Epoch 10: Train Loss = 7.2310, Val Loss = 8.3484
+Early stopping triggered.
+Hyperparameters: {'batch_size': 128, 'learning_rate': 0.1, 'model_dense_neurons': 16, 'model_embedding_size': 16, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.2, 'scheduler_gamma': 0.995, 'sgd_momentum': 0.9, 'weight_decay': 0.001}
+Epoch 10: Train Loss = nan, Val Loss = nan
+Early stopping triggered.
+Hyperparameters: {'batch_size': 32, 'learning_rate': 0.001, 'model_dense_neurons': 32, 'model_embedding_size': 32, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.8, 'scheduler_gamma': 0.8, 'sgd_momentum': 0.9, 'weight_decay': 0.0001}
+Epoch 10: Train Loss = 6.9039, Val Loss = 5.8665
+Early stopping triggered.
+Hyperparameters: {'batch_size': 32, 'learning_rate': 0.01, 'model_dense_neurons': 32, 'model_embedding_size': 32, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.2, 'scheduler_gamma': 0.5, 'sgd_momentum': 0.8, 'weight_decay': 0.001}
+Epoch 10: Train Loss = 6.1952, Val Loss = 5.7138
+Early stopping triggered.
+Hyperparameters: {'batch_size': 32, 'learning_rate': 0.05, 'model_dense_neurons': 32, 'model_embedding_size': 32, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.5, 'scheduler_gamma': 0.9, 'sgd_momentum': 0.5, 'weight_decay': 1e-05}
+Epoch 10: Train Loss = 3.5280, Val Loss = 2.6665
+Early stopping triggered.
+Hyperparameters: {'batch_size': 128, 'learning_rate': 0.05, 'model_dense_neurons': 32, 'model_embedding_size': 16, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.9, 'scheduler_gamma': 1, 'sgd_momentum': 0.5, 'weight_decay': 0.0001}
+Epoch 10: Train Loss = 6.1117, Val Loss = 6.4472
+Early stopping triggered.
+Hyperparameters: {'batch_size': 128, 'learning_rate': 0.01, 'model_dense_neurons': 16, 'model_embedding_size': 8, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.5, 'scheduler_gamma': 0.8, 'sgd_momentum': 0.5, 'weight_decay': 1e-05}
+Epoch 10: Train Loss = 8.0775, Val Loss = 8.4779
+Early stopping triggered.
+Hyperparameters: {'batch_size': 128, 'learning_rate': 0.001, 'model_dense_neurons': 16, 'model_embedding_size': 8, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.8, 'scheduler_gamma': 0.9, 'sgd_momentum': 0.8, 'weight_decay': 0.0001}
+Epoch 10: Train Loss = 8.2507, Val Loss = 8.8385
+Early stopping triggered.
+Hyperparameters: {'batch_size': 128, 'learning_rate': 0.1, 'model_dense_neurons': 16, 'model_embedding_size': 8, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.2, 'scheduler_gamma': 0.995, 'sgd_momentum': 0.9, 'weight_decay': 0.001}
+Epoch 10: Train Loss = nan, Val Loss = nan
+Early stopping triggered.
+Hyperparameters: {'batch_size': 64, 'learning_rate': 0.1, 'model_dense_neurons': 16, 'model_embedding_size': 8, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.8, 'scheduler_gamma': 1, 'sgd_momentum': 0.9, 'weight_decay': 0.0001}
+Epoch 10: Train Loss = 2.5088, Val Loss = 2.3701
+Early stopping triggered.
+Hyperparameters: {'batch_size': 64, 'learning_rate': 0.05, 'model_dense_neurons': 16, 'model_embedding_size': 8, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.2, 'scheduler_gamma': 0.5, 'sgd_momentum': 0.8, 'weight_decay': 1e-05}
+Epoch 10: Train Loss = 6.2700, Val Loss = 6.2071
+Early stopping triggered.
+Hyperparameters: {'batch_size': 64, 'learning_rate': 0.001, 'model_dense_neurons': 16, 'model_embedding_size': 8, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.9, 'scheduler_gamma': 0.995, 'sgd_momentum': 0.5, 'weight_decay': 0.001}
+Epoch 10: Train Loss = 8.0067, Val Loss = 8.2784
+Early stopping triggered.
+Hyperparameters: {'batch_size': 128, 'learning_rate': 0.05, 'model_dense_neurons': 32, 'model_embedding_size': 8, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.9, 'scheduler_gamma': 1, 'sgd_momentum': 0.5, 'weight_decay': 0.0001}
+Epoch 10: Train Loss = 5.2652, Val Loss = 4.2613
+Early stopping triggered.
+Hyperparameters: {'batch_size': 64, 'learning_rate': 0.001, 'model_dense_neurons': 16, 'model_embedding_size': 16, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.9, 'scheduler_gamma': 0.995, 'sgd_momentum': 0.5, 'weight_decay': 0.001}
+Epoch 10: Train Loss = 8.4825, Val Loss = 8.5474
+Early stopping triggered.
+Hyperparameters: {'batch_size': 64, 'learning_rate': 0.1, 'model_dense_neurons': 16, 'model_embedding_size': 16, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.8, 'scheduler_gamma': 1, 'sgd_momentum': 0.9, 'weight_decay': 0.0001}
+Epoch 10: Train Loss = 2.5127, Val Loss = 2.3348
+Early stopping triggered.
+Hyperparameters: {'batch_size': 64, 'learning_rate': 0.05, 'model_dense_neurons': 16, 'model_embedding_size': 16, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.2, 'scheduler_gamma': 0.5, 'sgd_momentum': 0.8, 'weight_decay': 1e-05}
+Epoch 10: Train Loss = 7.0020, Val Loss = 7.1793
+Early stopping triggered.
+Hyperparameters: {'batch_size': 64, 'learning_rate': 0.1, 'model_dense_neurons': 256, 'model_embedding_size': 16, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.8, 'scheduler_gamma': 1, 'sgd_momentum': 0.9, 'weight_decay': 0.001}
+Epoch 10: Train Loss = nan, Val Loss = nan
+Early stopping triggered.
+Hyperparameters: {'batch_size': 64, 'learning_rate': 0.05, 'model_dense_neurons': 256, 'model_embedding_size': 16, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.5, 'scheduler_gamma': 0.995, 'sgd_momentum': 0.8, 'weight_decay': 0.0001}
+Epoch 10: Train Loss = nan, Val Loss = nan
+Early stopping triggered.
+Hyperparameters: {'batch_size': 64, 'learning_rate': 0.001, 'model_dense_neurons': 256, 'model_embedding_size': 16, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.9, 'scheduler_gamma': 0.9, 'sgd_momentum': 0.5, 'weight_decay': 1e-05}
+Epoch 10: Train Loss = 5.6678, Val Loss = 6.9105
+Early stopping triggered.
+Hyperparameters: {'batch_size': 128, 'learning_rate': 0.05, 'model_dense_neurons': 16, 'model_embedding_size': 16, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.9, 'scheduler_gamma': 1, 'sgd_momentum': 0.5, 'weight_decay': 0.0001}
+Epoch 10: Train Loss = 6.1620, Val Loss = 5.8448
+Early stopping triggered.
+Hyperparameters: {'batch_size': 64, 'learning_rate': 0.001, 'model_dense_neurons': 256, 'model_embedding_size': 8, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.9, 'scheduler_gamma': 0.9, 'sgd_momentum': 0.5, 'weight_decay': 1e-05}
+Epoch 10: Train Loss = 7.1295, Val Loss = 7.7937
+Early stopping triggered.
+Hyperparameters: {'batch_size': 64, 'learning_rate': 0.1, 'model_dense_neurons': 256, 'model_embedding_size': 8, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.8, 'scheduler_gamma': 1, 'sgd_momentum': 0.9, 'weight_decay': 0.001}
+Epoch 10: Train Loss = nan, Val Loss = nan
+Early stopping triggered.
+Hyperparameters: {'batch_size': 64, 'learning_rate': 0.05, 'model_dense_neurons': 256, 'model_embedding_size': 8, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.5, 'scheduler_gamma': 0.995, 'sgd_momentum': 0.8, 'weight_decay': 0.0001}
+Epoch 10: Train Loss = 17.5129, Val Loss = 740.6777
+Early stopping triggered.
+Hyperparameters: {'batch_size': 64, 'learning_rate': 0.001, 'model_dense_neurons': 32, 'model_embedding_size': 64, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.5, 'scheduler_gamma': 0.8, 'sgd_momentum': 0.8, 'weight_decay': 1e-05}
+Epoch 10: Train Loss = 6.4778, Val Loss = 7.3474
+Early stopping triggered.
+Hyperparameters: {'batch_size': 128, 'learning_rate': 0.1, 'model_dense_neurons': 128, 'model_embedding_size': 128, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.9, 'scheduler_gamma': 0.9, 'sgd_momentum': 0.8, 'weight_decay': 0.001}
+Epoch 10: Train Loss = nan, Val Loss = nan
+Early stopping triggered.
+Hyperparameters: {'batch_size': 128, 'learning_rate': 0.001, 'model_dense_neurons': 128, 'model_embedding_size': 128, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.8, 'scheduler_gamma': 0.5, 'sgd_momentum': 0.9, 'weight_decay': 1e-05}
+Epoch 10: Train Loss = 7.1994, Val Loss = 8.2745
+Early stopping triggered.
+Hyperparameters: {'batch_size': 128, 'learning_rate': 0.05, 'model_dense_neurons': 128, 'model_embedding_size': 128, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.2, 'scheduler_gamma': 0.995, 'sgd_momentum': 0.5, 'weight_decay': 0.0001}
+Epoch 10: Train Loss = 5.2256, Val Loss = 3.1919
+Early stopping triggered.
+Hyperparameters: {'batch_size': 32, 'learning_rate': 0.001, 'model_dense_neurons': 16, 'model_embedding_size': 32, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.8, 'scheduler_gamma': 0.8, 'sgd_momentum': 0.9, 'weight_decay': 0.0001}
+Epoch 10: Train Loss = 8.2175, Val Loss = 7.9719
+Early stopping triggered.
+Hyperparameters: {'batch_size': 32, 'learning_rate': 0.05, 'model_dense_neurons': 16, 'model_embedding_size': 32, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.5, 'scheduler_gamma': 0.9, 'sgd_momentum': 0.5, 'weight_decay': 1e-05}
+Epoch 10: Train Loss = 3.8769, Val Loss = 2.8426
+Early stopping triggered.
+Hyperparameters: {'batch_size': 128, 'learning_rate': 0.01, 'model_dense_neurons': 128, 'model_embedding_size': 128, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.5, 'scheduler_gamma': 0.5, 'sgd_momentum': 0.9, 'weight_decay': 1e-05}
+Epoch 10: Train Loss = 5.2662, Val Loss = 6.3087
+Early stopping triggered.
+Hyperparameters: {'batch_size': 32, 'learning_rate': 0.05, 'model_dense_neurons': 32, 'model_embedding_size': 16, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.5, 'scheduler_gamma': 0.9, 'sgd_momentum': 0.5, 'weight_decay': 1e-05}
+Epoch 10: Train Loss = 4.0095, Val Loss = 3.4721
+Early stopping triggered.
+Hyperparameters: {'batch_size': 32, 'learning_rate': 0.05, 'model_dense_neurons': 32, 'model_embedding_size': 8, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.5, 'scheduler_gamma': 0.9, 'sgd_momentum': 0.5, 'weight_decay': 1e-05}
+Epoch 10: Train Loss = 3.5984, Val Loss = 2.6583
+Early stopping triggered.
+Hyperparameters: {'batch_size': 32, 'learning_rate': 0.01, 'model_dense_neurons': 16, 'model_embedding_size': 32, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.2, 'scheduler_gamma': 0.5, 'sgd_momentum': 0.8, 'weight_decay': 0.001}
+Epoch 10: Train Loss = 7.5903, Val Loss = 7.2563
+Early stopping triggered.
+Hyperparameters: {'batch_size': 32, 'learning_rate': 0.001, 'model_dense_neurons': 32, 'model_embedding_size': 16, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.8, 'scheduler_gamma': 0.8, 'sgd_momentum': 0.9, 'weight_decay': 0.0001}
+Epoch 10: Train Loss = 6.7825, Val Loss = 5.6800
+Early stopping triggered.
+Hyperparameters: {'batch_size': 32, 'learning_rate': 0.01, 'model_dense_neurons': 32, 'model_embedding_size': 16, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.2, 'scheduler_gamma': 0.5, 'sgd_momentum': 0.8, 'weight_decay': 0.001}
+Epoch 10: Train Loss = 7.1210, Val Loss = 6.7503
+Early stopping triggered.

@@ -1,0 +1,16 @@
+{"time":"2025-02-24T11:27:26.314548119+01:00","level":"INFO","msg":"stream: starting","core version":"0.19.6","symlink path":"/home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/wandb/run-20250224_112726-sjbmrj3w/logs/debug-core.log"}
+{"time":"2025-02-24T11:27:26.425203709+01:00","level":"INFO","msg":"created new stream","id":"sjbmrj3w"}
+{"time":"2025-02-24T11:27:26.425255327+01:00","level":"INFO","msg":"stream: started","id":"sjbmrj3w"}
+{"time":"2025-02-24T11:27:26.425386727+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"sjbmrj3w"}
+{"time":"2025-02-24T11:27:26.425475456+01:00","level":"INFO","msg":"handler: started","stream_id":"sjbmrj3w"}
+{"time":"2025-02-24T11:27:26.425410733+01:00","level":"INFO","msg":"sender: started","stream_id":"sjbmrj3w"}
+{"time":"2025-02-24T11:27:26.705031185+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-02-24T11:30:51.566817364+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-02-24T11:30:51.567506095+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-02-24T11:30:52.567436423+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-sjbmrj3w-valtrue_vs_pred_table","runtime_seconds":1.3317460190000001}],"total_operations":1}}
+{"time":"2025-02-24T11:30:52.989594806+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-02-24T11:30:54.190260076+01:00","level":"INFO","msg":"stream: closing","id":"sjbmrj3w"}
+{"time":"2025-02-24T11:30:54.190284814+01:00","level":"INFO","msg":"handler: closed","stream_id":"sjbmrj3w"}
+{"time":"2025-02-24T11:30:54.190299201+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"sjbmrj3w"}
+{"time":"2025-02-24T11:30:54.190319049+01:00","level":"INFO","msg":"sender: closed","stream_id":"sjbmrj3w"}
+{"time":"2025-02-24T11:30:54.190395895+01:00","level":"INFO","msg":"stream: closed","id":"sjbmrj3w"}

@@ -1,0 +1,16 @@
+{"time":"2025-02-21T14:08:10.959315454+01:00","level":"INFO","msg":"stream: starting","core version":"0.19.6","symlink path":"/home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/wandb/run-20250221_140810-t88gpg53/logs/debug-core.log"}
+{"time":"2025-02-21T14:08:11.07037776+01:00","level":"INFO","msg":"created new stream","id":"t88gpg53"}
+{"time":"2025-02-21T14:08:11.070418738+01:00","level":"INFO","msg":"stream: started","id":"t88gpg53"}
+{"time":"2025-02-21T14:08:11.07046733+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"t88gpg53"}
+{"time":"2025-02-21T14:08:11.070517435+01:00","level":"INFO","msg":"sender: started","stream_id":"t88gpg53"}
+{"time":"2025-02-21T14:08:11.070548154+01:00","level":"INFO","msg":"handler: started","stream_id":"t88gpg53"}
+{"time":"2025-02-21T14:08:11.34599587+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-02-21T14:08:50.092173454+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-02-21T14:08:50.092695487+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-02-21T14:08:51.093017108+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-t88gpg53-test_affinity_table_table","runtime_seconds":4.831945433},{"desc":"uploading artifact run-t88gpg53-test_affinity_table_table","runtime_seconds":4.631324407},{"desc":"uploading artifact run-t88gpg53-test_affinity_table_table","runtime_seconds":4.420762344},{"desc":"uploading artifact run-t88gpg53-test_affinity_table_table","runtime_seconds":4.225021403},{"desc":"uploading artifact run-t88gpg53-test_affinity_table_table","runtime_seconds":4.023148755},{"desc":"uploading artifact run-t88gpg53-test_affinity_table_table","runtime_seconds":3.823666804},{"desc":"uploading artifact run-t88gpg53-test_affinity_table_table","runtime_seconds":3.622984491},{"desc":"uploading artifact run-t88gpg53-test_affinity_table_table","runtime_seconds":3.411536844},{"desc":"uploading artifact run-t88gpg53-test_affinity_table_table","runtime_seconds":3.21325642},{"desc":"uploading artifact run-t88gpg53-test_affinity_table_table","runtime_seconds":3.021637502}],"total_operations":20}}
+{"time":"2025-02-21T14:09:25.913788372+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-02-21T14:09:27.197376619+01:00","level":"INFO","msg":"stream: closing","id":"t88gpg53"}
+{"time":"2025-02-21T14:09:27.197405784+01:00","level":"INFO","msg":"handler: closed","stream_id":"t88gpg53"}
+{"time":"2025-02-21T14:09:27.197421053+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"t88gpg53"}
+{"time":"2025-02-21T14:09:27.197447594+01:00","level":"INFO","msg":"sender: closed","stream_id":"t88gpg53"}
+{"time":"2025-02-21T14:09:27.197521705+01:00","level":"INFO","msg":"stream: closed","id":"t88gpg53"}

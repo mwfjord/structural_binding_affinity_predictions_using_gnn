@@ -1,0 +1,16 @@
+{"time":"2025-02-21T16:01:03.094501152+01:00","level":"INFO","msg":"stream: starting","core version":"0.19.6","symlink path":"/home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/wandb/run-20250221_160102-7cancs4o/logs/debug-core.log"}
+{"time":"2025-02-21T16:01:03.204756331+01:00","level":"INFO","msg":"created new stream","id":"7cancs4o"}
+{"time":"2025-02-21T16:01:03.204793252+01:00","level":"INFO","msg":"stream: started","id":"7cancs4o"}
+{"time":"2025-02-21T16:01:03.204870138+01:00","level":"INFO","msg":"handler: started","stream_id":"7cancs4o"}
+{"time":"2025-02-21T16:01:03.204874527+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"7cancs4o"}
+{"time":"2025-02-21T16:01:03.204929281+01:00","level":"INFO","msg":"sender: started","stream_id":"7cancs4o"}
+{"time":"2025-02-21T16:01:03.489055368+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-02-21T16:01:14.745664529+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-02-21T16:01:14.746325639+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-02-21T16:01:15.746313127+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact graph_classification_model","runtime_seconds":1.7675727220000002,"subtasks":[{"desc":"model_epoch_10.pth","runtime_seconds":0.953727584,"progress":"545.2KB/545.2KB"}]},{"desc":"uploading artifact run-7cancs4o-histogram_table","runtime_seconds":1.572123436},{"desc":"uploading artifact run-7cancs4o-testtrue_vs_pred_table","runtime_seconds":1.007743465,"subtasks":[{"desc":"test/true_vs_pred_table.table.json","runtime_seconds":0.119503299,"progress":"1.9KB/1.9KB"}]}],"total_operations":3}}
+{"time":"2025-02-21T16:01:17.183870092+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-02-21T16:01:18.411373244+01:00","level":"INFO","msg":"stream: closing","id":"7cancs4o"}
+{"time":"2025-02-21T16:01:18.411405536+01:00","level":"INFO","msg":"handler: closed","stream_id":"7cancs4o"}
+{"time":"2025-02-21T16:01:18.411421446+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"7cancs4o"}
+{"time":"2025-02-21T16:01:18.41143917+01:00","level":"INFO","msg":"sender: closed","stream_id":"7cancs4o"}
+{"time":"2025-02-21T16:01:18.411527338+01:00","level":"INFO","msg":"stream: closed","id":"7cancs4o"}

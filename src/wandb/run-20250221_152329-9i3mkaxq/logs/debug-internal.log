@@ -1,0 +1,16 @@
+{"time":"2025-02-21T15:23:30.015557071+01:00","level":"INFO","msg":"stream: starting","core version":"0.19.6","symlink path":"/home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/wandb/run-20250221_152329-9i3mkaxq/logs/debug-core.log"}
+{"time":"2025-02-21T15:23:30.129091178+01:00","level":"INFO","msg":"created new stream","id":"9i3mkaxq"}
+{"time":"2025-02-21T15:23:30.12915589+01:00","level":"INFO","msg":"stream: started","id":"9i3mkaxq"}
+{"time":"2025-02-21T15:23:30.129216065+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"9i3mkaxq"}
+{"time":"2025-02-21T15:23:30.129267918+01:00","level":"INFO","msg":"handler: started","stream_id":"9i3mkaxq"}
+{"time":"2025-02-21T15:23:30.129846605+01:00","level":"INFO","msg":"sender: started","stream_id":"9i3mkaxq"}
+{"time":"2025-02-21T15:23:30.427875288+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-02-21T15:24:02.89590072+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-02-21T15:24:02.8965171+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-02-21T15:24:03.867553753+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact graph_classification_model","runtime_seconds":3.440821514,"subtasks":[{"desc":"model_epoch_90.pth","runtime_seconds":0.373489839,"progress":"545.2KB/545.2KB"}]},{"desc":"uploading artifact run-9i3mkaxq-histogram_table","runtime_seconds":1.259362033},{"desc":"uploading artifact run-9i3mkaxq-test_affinity_table_table","runtime_seconds":1.01416862,"subtasks":[{"desc":"test_affinity_table_table.table.json","runtime_seconds":0.359514259,"progress":"1.8KB/1.8KB"}]},{"desc":"uploading config.yaml","runtime_seconds":0.112667106,"progress":"5.1KB/5.1KB"}],"total_operations":4}}
+{"time":"2025-02-21T15:24:05.263357223+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-02-21T15:24:06.799685301+01:00","level":"INFO","msg":"stream: closing","id":"9i3mkaxq"}
+{"time":"2025-02-21T15:24:06.799706981+01:00","level":"INFO","msg":"handler: closed","stream_id":"9i3mkaxq"}
+{"time":"2025-02-21T15:24:06.799719644+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"9i3mkaxq"}
+{"time":"2025-02-21T15:24:06.799765758+01:00","level":"INFO","msg":"sender: closed","stream_id":"9i3mkaxq"}
+{"time":"2025-02-21T15:24:06.799856134+01:00","level":"INFO","msg":"stream: closed","id":"9i3mkaxq"}

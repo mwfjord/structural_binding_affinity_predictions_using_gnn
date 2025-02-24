@@ -1,4 +1,5 @@
 from math import dist
+from sympy import im
 import torch
 import numpy as np
 from rdkit import Chem
@@ -7,7 +8,7 @@ import json
 import subprocess
 import sys
 from rdkit.Chem import AllChem
-
+import os
 
 
 
@@ -84,13 +85,10 @@ class Residue():
         """
         Get the molecular fingerprint of the residue
         """
-        fpgen = AllChem.GetRDKitFPGenerator()
-        ao = AllChem.AdditionalOutput()
-        ao.CollectBitPaths()
-        fp = fpgen.GetSparseCountFingerprint(self.rdkit_mol ,additionalOutput=ao)
-        if fp is not None:
-            return fp
-        return None
+        rdkgen = AllChem.GetRDKitFPGenerator(fpSize=64)
+        fp = rdkgen.GetFingerprint(self.rdkit_mol)
+        return fp
+        
     
     def _get_center(self):
         """
@@ -99,7 +97,8 @@ class Residue():
         center = np.array([0.0, 0.0, 0.0])
         for atom in self.atoms:
             center += atom.get_coord()
-        return center / len(self.atoms)
+        center /= len(self.atoms)
+        return center
     
     def _get_protein_or_dna(self):
         """
@@ -116,28 +115,30 @@ class Residue():
         """
         Get the features of the residue
         """
-        return np.array([self.protein_or_dna] + list(self.center) + list(self.molecular_fingerprint))
+        features = [self.protein_or_dna] + list(self.center) + list(self.molecular_fingerprint)
+        return features
 
 class Complex():
     """
     Class to parse and represent protein-DNA complexes from strutural files
     """
     def __init__(self, file):
+        self.bond_types = ['hp', 'sb', 'pc', 'ps', 'ts', 'vdw', 'hb']
+        self.residues = []
         self.cif_file = file
+        self.complex_id = file.split("/")[-1].split(".")[0]
         self.structure = None
         self.file = self._convert_file2pdb()
         self.edge_index, self.edge_attr = self._get_contacts()
-        self.residues = []
-        self.bond_types = ['hp', 'sb', 'pc', 'ps', 'ts', 'vdw', 'hb']
 
     def _get_edge_index(self):
-        return torch.tensor(self.edge_index, dtype=torch.long)
+        return torch.tensor(self.edge_index, dtype=torch.long).t()
     
     def _get_edge_attr(self):
         return torch.tensor(self.edge_attr, dtype=torch.float32)
     
     def _get_node_features(self):
-        return torch.tensor([residue._get_features for residue in self.residues], dtype=torch.float32)
+        return torch.tensor([residue._get_features() for residue in self.residues], dtype=torch.float32)
 
     def bond_types2onehot(self, bond):
         """
@@ -153,47 +154,53 @@ class Complex():
         """
         residue = self.residues[residue_index]
         nucleotide = self.residues[nucleotide_index]
-        residue = [residue.get_center()]
-        nucleotide = [nucleotide.get_center()]
-        return dist(residue, nucleotide)
+        residue = np.array(residue.center)
+        nucleotide = np.array(nucleotide.center)
+        return  np.linalg.norm(residue - nucleotide)
 
     def _convert_file2pdb(self):
         """
         Parse the complex structure from the PDB file
         """
+        residues = []
         parser = MMCIFParser()
         self.structure = parser.get_structure("complex", self.cif_file)
         for model in self.structure:
             for chain in model:
                 for residue in chain:
                     res = Residue(residue)
-                    self.residues.append(res)
+                    residues.append(res)
         io = PDBIO()
         io.set_structure(self.structure)
         file_path = "../data/temp/complex.pdb"
         io.save(file_path)
+        self.residues = residues
         return file_path
     
     def _get_contacts(self):
         # Define the path to the script and the arguments
         script_path = "../getcontacts/get_static_contacts.py"
+        output_path = f"../data/temp/contacts_{self.complex_id}.tsv"
 
-        args = ["--structure", self.file, 
-                "--sele", "nucleic", 
-                "--sele2", "protein", 
-                "--itypes", "all", 
-                "--output", "../data/temp/contacts.tsv", 
-                "--ps_cutoff_dist", "100", 
-                "--hbond_cutoff_ang", "70"]
+        # Check if the output file already exists
+        if not os.path.exists(output_path):
 
-        # Construct the command: use "python" (or "python3" if needed) and pass the script and its arguments
-        command = [sys.executable, script_path] + args
+            args = ["--structure", self.file, 
+                    "--sele", "nucleic", 
+                    "--sele2", "protein", 
+                    "--itypes", "all", 
+                    "--output", output_path, 
+                    "--ps_cutoff_dist", "100", 
+                    "--hbond_cutoff_ang", "70"]
 
-        # Run the command and capture the output
-        subprocess.run(command, capture_output=True, text=True)
+            # Construct the command: use "python" (or "python3" if needed) and pass the script and its arguments
+            command = [sys.executable, script_path] + args
+
+            # Run the command and capture the output
+            subprocess.run(command, capture_output=True, text=True)
         
         # Parse the tsv file to get the contacts
-        edge_index, edge_attr =  self.parse_chemical_connections("../data/temp/contacts.tsv")
+        edge_index, edge_attr =  self.parse_chemical_connections(output_path)
         return edge_index, edge_attr
     
     def parse_chemical_connections(self, filename):
@@ -211,9 +218,11 @@ class Complex():
                 if not line or line.startswith('#'):
                     continue
                 
-                # Split the line into parts.
-                # Modify the delimiter (e.g., comma, tab, whitespace) as needed.
-                parts = line.split('\t')  # or line.split(',') if CSV
+                # Split the line into parts based on tab or whitespace delimiters
+                import re
+                parts = re.split(r'\t|\s+', line)
+
+
                 
                 # Make sure there are at least two parts: residue and nucleotide.
                 if len(parts) < 2:
@@ -221,17 +230,15 @@ class Complex():
                 
                 bond_type = self.bond_types2onehot(parts[1])
                 residue = parts[2]
-                residue = residue.split(":")[1]
-                residue_index = residue[2]
+                residue_index = int(residue.split(":")[2])
                 nucleotide = parts[3]
-                nucleotide = nucleotide.split(":")[1]
-                nucleotide_index = nucleotide[2]
-                distance = self.get_distance(residue, nucleotide)
+                nucleotide_index = int(nucleotide.split(":")[2])
+                distance = self.get_distance(residue_index, nucleotide_index)
                 # Add the connection to the dictionary.
                 edge_index.append([residue_index, nucleotide_index])
-                edge_attr.append(bond_type + [distance])
+                edge_attr.append([1])
 
         return edge_index, edge_attr
 
-data = Complex("../data/example.cif")
-print(data.contacts)
+# data = Complex("../data/example.cif")
+# print(data.contacts)

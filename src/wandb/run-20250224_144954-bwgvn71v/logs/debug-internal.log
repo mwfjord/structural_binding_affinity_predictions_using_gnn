@@ -1,0 +1,7 @@
+{"time":"2025-02-24T14:49:55.083243438+01:00","level":"INFO","msg":"stream: starting","core version":"0.19.6","symlink path":"/home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/wandb/run-20250224_144954-bwgvn71v/logs/debug-core.log"}
+{"time":"2025-02-24T14:49:55.193770198+01:00","level":"INFO","msg":"created new stream","id":"bwgvn71v"}
+{"time":"2025-02-24T14:49:55.193881941+01:00","level":"INFO","msg":"stream: started","id":"bwgvn71v"}
+{"time":"2025-02-24T14:49:55.193956252+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"bwgvn71v"}
+{"time":"2025-02-24T14:49:55.193961943+01:00","level":"INFO","msg":"handler: started","stream_id":"bwgvn71v"}
+{"time":"2025-02-24T14:49:55.194037337+01:00","level":"INFO","msg":"sender: started","stream_id":"bwgvn71v"}
+{"time":"2025-02-24T14:49:55.460518975+01:00","level":"INFO","msg":"Starting system monitor"}

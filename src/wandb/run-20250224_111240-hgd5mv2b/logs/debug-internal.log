@@ -1,0 +1,16 @@
+{"time":"2025-02-24T11:12:40.621979374+01:00","level":"INFO","msg":"stream: starting","core version":"0.19.6","symlink path":"/home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/wandb/run-20250224_111240-hgd5mv2b/logs/debug-core.log"}
+{"time":"2025-02-24T11:12:40.732401349+01:00","level":"INFO","msg":"created new stream","id":"hgd5mv2b"}
+{"time":"2025-02-24T11:12:40.732441966+01:00","level":"INFO","msg":"stream: started","id":"hgd5mv2b"}
+{"time":"2025-02-24T11:12:40.732485209+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"hgd5mv2b"}
+{"time":"2025-02-24T11:12:40.732508473+01:00","level":"INFO","msg":"sender: started","stream_id":"hgd5mv2b"}
+{"time":"2025-02-24T11:12:40.732572785+01:00","level":"INFO","msg":"handler: started","stream_id":"hgd5mv2b"}
+{"time":"2025-02-24T11:12:41.012594724+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-02-24T11:13:14.264410032+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-02-24T11:13:14.265143778+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-02-24T11:13:15.26490739+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact graph_classification_model","runtime_seconds":1.5016521470000002},{"desc":"uploading artifact run-hgd5mv2b-valtrue_vs_pred_table","runtime_seconds":1.205609846}],"total_operations":2}}
+{"time":"2025-02-24T11:13:15.975314124+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-02-24T11:13:17.375253816+01:00","level":"INFO","msg":"stream: closing","id":"hgd5mv2b"}
+{"time":"2025-02-24T11:13:17.375284053+01:00","level":"INFO","msg":"handler: closed","stream_id":"hgd5mv2b"}
+{"time":"2025-02-24T11:13:17.375301747+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"hgd5mv2b"}
+{"time":"2025-02-24T11:13:17.375322085+01:00","level":"INFO","msg":"sender: closed","stream_id":"hgd5mv2b"}
+{"time":"2025-02-24T11:13:17.375401777+01:00","level":"INFO","msg":"stream: closed","id":"hgd5mv2b"}

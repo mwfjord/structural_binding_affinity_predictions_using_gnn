@@ -1,0 +1,32 @@
+Using GPU 3
+                                                                                                                                                                                                                                                  
+Epoch 10: Train Loss = 6.3505, Val Loss = 5.7039
+Epoch 20: Train Loss = 3.9645, Val Loss = 3.1922
+Epoch 30: Train Loss = 3.3820, Val Loss = 2.6730
+Epoch 40: Train Loss = 2.9642, Val Loss = 2.5148
+Epoch 50: Train Loss = 3.0098, Val Loss = 2.5544
+Epoch 60: Train Loss = 2.9238, Val Loss = 2.4447
+Epoch 70: Train Loss = 2.7813, Val Loss = 2.4394
+Epoch 80: Train Loss = 2.6192, Val Loss = 2.3840
+Epoch 90: Train Loss = 2.7249, Val Loss = 2.3840
+Epoch 100: Train Loss = 2.3886, Val Loss = 2.3449
+Epoch 110: Train Loss = 2.6757, Val Loss = 2.3672
+Epoch 120: Train Loss = 2.6164, Val Loss = 2.3617
+Epoch 130: Train Loss = 2.5247, Val Loss = 2.3465
+Epoch 140: Train Loss = 2.5368, Val Loss = 2.3434
+Epoch 150: Train Loss = 2.4063, Val Loss = 2.3418
+Epoch 160: Train Loss = 2.5419, Val Loss = 2.3360
+Epoch 170: Train Loss = 2.5086, Val Loss = 2.3268
+Epoch 180: Train Loss = 2.5221, Val Loss = 2.3306
+Epoch 190: Train Loss = 2.5551, Val Loss = 2.3333
+Epoch 200: Train Loss = 2.5351, Val Loss = 2.3306
+Epoch 210: Train Loss = 2.4351, Val Loss = 2.3256
+Epoch 220: Train Loss = 2.5009, Val Loss = 2.3232
+Epoch 230: Train Loss = 2.4388, Val Loss = 2.3280
+Epoch 240: Train Loss = 2.5148, Val Loss = 2.3221
+Epoch 250: Train Loss = 2.4943, Val Loss = 2.3244
+Epoch 260: Train Loss = 2.4086, Val Loss = 2.3221
+Epoch 270: Train Loss = 2.5088, Val Loss = 2.3199
+Epoch 280: Train Loss = 2.5958, Val Loss = 2.3210
+Epoch 290: Train Loss = 2.4715, Val Loss = 2.3210
+Epoch 300: Train Loss = 2.5644, Val Loss = 2.3221

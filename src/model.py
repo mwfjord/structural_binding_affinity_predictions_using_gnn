@@ -3,6 +3,54 @@ import torch.nn.functional as F
 from torch_geometric.nn import GCNConv, global_mean_pool as gap, global_max_pool as gmp, TopKPooling, Linear
 import torch.nn as nn
 
+class ProteinDNAGNN_mini(torch.nn.Module):
+    def __init__(self, input_dim, model_params, config):
+        """
+        Args:
+            input_dim (int): Dimension of input node features.
+            hidden_dim (int): Dimension of hidden layers.
+            output_dim (int): Dimension of the output (default is 1 for regression).
+            cfg (optional): Configuration object with model parameters.
+        """
+        super(ProteinDNAGNN, self).__init__()
+        hidden_channels = int(model_params["model_embedding_size"])
+        self.conv1 = GCNConv(input_dim, hidden_channels, normalize=True)
+        self.conv2 = GCNConv(hidden_channels, hidden_channels, normalize=True)
+        self.conv3 = GCNConv(hidden_channels, hidden_channels, normalize=True)
+        self.batch_norm1 = nn.BatchNorm1d(hidden_channels)
+        self.batch_norm2 = nn.BatchNorm1d(hidden_channels)
+        self.batch_norm3 = nn.BatchNorm1d(hidden_channels)
+        self.lin1 = Linear(hidden_channels, int(hidden_channels/2))
+        self.lin2 = Linear(int(hidden_channels/2), 1)
+
+    def forward(self,x, edge_attr, edge_index, batch):
+        # 1. Obtain node embeddings 
+        x = self.conv1(x, edge_index)
+        x = F.relu(x)
+        x = self.batch_norm1(x)
+        x = self.conv2(x, edge_index)
+        x = F.relu(x)
+        x = self.batch_norm2(x)
+        x = self.conv3(x, edge_index)
+        x = F.relu(x)
+        x = self.batch_norm3(x)
+
+        
+
+        # 2. Readout layer
+        x = gmp(x, batch)  # [batch_size, hidden_channels]
+
+        # 3. Apply a final classifier
+        # x = F.dropout(x, p=0.5, training=self.training)
+        x = self.lin1(x)
+        x = F.relu(x)
+        x = self.lin2(x)
+
+        
+        return x
+    
+
+
 class ProteinDNAGNN(torch.nn.Module):
     def __init__(self, input_dim, model_params, config):
         """
@@ -51,7 +99,7 @@ class ProteinDNAGNN(torch.nn.Module):
 
         global_representation = []
         for i in range(self.num_layers):
-            x = self.conv_layers[i](x, edge_index, edge_attr)
+            x = self.conv_layers[i](x, edge_index)
             x = torch.relu(self.dense_layers[i](x))
             x = self.bn_layers[i](x)
             # Always aggregate last layer
@@ -69,6 +117,7 @@ class ProteinDNAGNN(torch.nn.Module):
         x = torch.relu(self.linear2(x))
         x = F.dropout(x, p=0.8, training=self.training)
         x = self.linear3(x)
+        # x = torch.relu(x)
         # tensor_threshold = torch.tensor([self.prediction_threshold], dtype=torch.float32)
         # tensor_threshold = tensor_threshold.to(x.device)
         # x = torch.min(tensor_threshold, x)

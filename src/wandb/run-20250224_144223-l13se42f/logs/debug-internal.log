@@ -1,0 +1,20 @@
+{"time":"2025-02-24T14:42:23.998237412+01:00","level":"INFO","msg":"stream: starting","core version":"0.19.6","symlink path":"/home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/wandb/run-20250224_144223-l13se42f/logs/debug-core.log"}
+{"time":"2025-02-24T14:42:24.108995384+01:00","level":"INFO","msg":"created new stream","id":"l13se42f"}
+{"time":"2025-02-24T14:42:24.109042814+01:00","level":"INFO","msg":"stream: started","id":"l13se42f"}
+{"time":"2025-02-24T14:42:24.109065798+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"l13se42f"}
+{"time":"2025-02-24T14:42:24.109113228+01:00","level":"INFO","msg":"handler: started","stream_id":"l13se42f"}
+{"time":"2025-02-24T14:42:24.109166269+01:00","level":"INFO","msg":"sender: started","stream_id":"l13se42f"}
+{"time":"2025-02-24T14:42:54.112821434+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded"}
+{"time":"2025-02-24T14:42:57.08689115+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-02-24T14:43:27.804623234+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-02-24T14:43:34.116461809+01:00","level":"INFO","msg":"api: retrying HTTP error","status":500,"url":"https://api.wandb.ai/files/mwfjord/structural_binding_affinity_predictions_using_gnn/l13se42f/file_stream","body":"{\"error\":\"context deadline exceeded\"}"}
+{"time":"2025-02-24T14:44:27.141632902+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-02-24T14:47:45.975179549+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-02-24T14:47:45.976002995+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-02-24T14:47:46.975734329+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-l13se42f-valtrue_vs_pred_table","runtime_seconds":1.41828526},{"desc":"uploading wandb-summary.json","runtime_seconds":0.042473114,"progress":"998B/998B"},{"desc":"uploading output.log","runtime_seconds":0.04246056,"progress":"5.3KB/5.3KB"}],"total_operations":3}}
+{"time":"2025-02-24T14:47:47.706462585+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-02-24T14:47:48.922419507+01:00","level":"INFO","msg":"stream: closing","id":"l13se42f"}
+{"time":"2025-02-24T14:47:48.922443193+01:00","level":"INFO","msg":"handler: closed","stream_id":"l13se42f"}
+{"time":"2025-02-24T14:47:48.92245787+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"l13se42f"}
+{"time":"2025-02-24T14:47:48.9225209+01:00","level":"INFO","msg":"sender: closed","stream_id":"l13se42f"}
+{"time":"2025-02-24T14:47:48.922564624+01:00","level":"INFO","msg":"stream: closed","id":"l13se42f"}

@@ -1,0 +1,16 @@
+{"time":"2025-02-20T17:37:01.604988796+01:00","level":"INFO","msg":"stream: starting","core version":"0.19.6","symlink path":"/home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/wandb/run-20250220_173701-ilbkxvl8/logs/debug-core.log"}
+{"time":"2025-02-20T17:37:01.717181446+01:00","level":"INFO","msg":"created new stream","id":"ilbkxvl8"}
+{"time":"2025-02-20T17:37:01.717223866+01:00","level":"INFO","msg":"stream: started","id":"ilbkxvl8"}
+{"time":"2025-02-20T17:37:01.717358883+01:00","level":"INFO","msg":"handler: started","stream_id":"ilbkxvl8"}
+{"time":"2025-02-20T17:37:01.717342181+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"ilbkxvl8"}
+{"time":"2025-02-20T17:37:01.717428676+01:00","level":"INFO","msg":"sender: started","stream_id":"ilbkxvl8"}
+{"time":"2025-02-20T17:37:01.954756548+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-02-20T17:39:18.241650994+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-02-20T17:39:18.242239704+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-02-20T17:39:19.242258002+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.643215768,"progress":"3.2KB/3.2KB"},{"desc":"uploading config.yaml","runtime_seconds":0.495875975,"progress":"2.6KB/2.6KB"}],"total_operations":2}}
+{"time":"2025-02-20T17:39:19.309280406+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-02-20T17:39:20.525903007+01:00","level":"INFO","msg":"stream: closing","id":"ilbkxvl8"}
+{"time":"2025-02-20T17:39:20.525928856+01:00","level":"INFO","msg":"handler: closed","stream_id":"ilbkxvl8"}
+{"time":"2025-02-20T17:39:20.525943213+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"ilbkxvl8"}
+{"time":"2025-02-20T17:39:20.525979302+01:00","level":"INFO","msg":"sender: closed","stream_id":"ilbkxvl8"}
+{"time":"2025-02-20T17:39:20.526033325+01:00","level":"INFO","msg":"stream: closed","id":"ilbkxvl8"}

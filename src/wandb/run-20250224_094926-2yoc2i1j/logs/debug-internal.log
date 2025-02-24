@@ -1,0 +1,16 @@
+{"time":"2025-02-24T09:49:27.113843823+01:00","level":"INFO","msg":"stream: starting","core version":"0.19.6","symlink path":"/home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/wandb/run-20250224_094926-2yoc2i1j/logs/debug-core.log"}
+{"time":"2025-02-24T09:49:27.223354417+01:00","level":"INFO","msg":"created new stream","id":"2yoc2i1j"}
+{"time":"2025-02-24T09:49:27.223389885+01:00","level":"INFO","msg":"stream: started","id":"2yoc2i1j"}
+{"time":"2025-02-24T09:49:27.223431795+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"2yoc2i1j"}
+{"time":"2025-02-24T09:49:27.22346594+01:00","level":"INFO","msg":"sender: started","stream_id":"2yoc2i1j"}
+{"time":"2025-02-24T09:49:27.223511446+01:00","level":"INFO","msg":"handler: started","stream_id":"2yoc2i1j"}
+{"time":"2025-02-24T09:49:27.489022787+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-02-24T09:50:53.447705748+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-02-24T09:50:53.448348632+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-02-24T09:50:54.448222561+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-2yoc2i1j-histogram_table","runtime_seconds":1.5940517239999998},{"desc":"uploading artifact run-2yoc2i1j-testtrue_vs_pred_table","runtime_seconds":1.007928265}],"total_operations":2}}
+{"time":"2025-02-24T09:50:55.133879442+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-02-24T09:50:56.569815845+01:00","level":"INFO","msg":"stream: closing","id":"2yoc2i1j"}
+{"time":"2025-02-24T09:50:56.569877823+01:00","level":"INFO","msg":"handler: closed","stream_id":"2yoc2i1j"}
+{"time":"2025-02-24T09:50:56.569894625+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"2yoc2i1j"}
+{"time":"2025-02-24T09:50:56.56991337+01:00","level":"INFO","msg":"sender: closed","stream_id":"2yoc2i1j"}
+{"time":"2025-02-24T09:50:56.569995707+01:00","level":"INFO","msg":"stream: closed","id":"2yoc2i1j"}

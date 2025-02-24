@@ -1,0 +1,16 @@
+{"time":"2025-02-24T10:45:49.021716547+01:00","level":"INFO","msg":"stream: starting","core version":"0.19.6","symlink path":"/home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/wandb/run-20250224_104548-ovmih8aa/logs/debug-core.log"}
+{"time":"2025-02-24T10:45:49.131328506+01:00","level":"INFO","msg":"created new stream","id":"ovmih8aa"}
+{"time":"2025-02-24T10:45:49.131368272+01:00","level":"INFO","msg":"stream: started","id":"ovmih8aa"}
+{"time":"2025-02-24T10:45:49.13143033+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"ovmih8aa"}
+{"time":"2025-02-24T10:45:49.13146203+01:00","level":"INFO","msg":"sender: started","stream_id":"ovmih8aa"}
+{"time":"2025-02-24T10:45:49.131513248+01:00","level":"INFO","msg":"handler: started","stream_id":"ovmih8aa"}
+{"time":"2025-02-24T10:45:49.397523618+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-02-24T10:47:12.776600482+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-02-24T10:47:12.777407587+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-02-24T10:47:13.777464627+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-ovmih8aa-trainhistogram_table","runtime_seconds":1.346749417}],"total_operations":1}}
+{"time":"2025-02-24T10:47:15.95910621+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-02-24T10:47:17.166808707+01:00","level":"INFO","msg":"stream: closing","id":"ovmih8aa"}
+{"time":"2025-02-24T10:47:17.166865164+01:00","level":"INFO","msg":"handler: closed","stream_id":"ovmih8aa"}
+{"time":"2025-02-24T10:47:17.166883068+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"ovmih8aa"}
+{"time":"2025-02-24T10:47:17.166935007+01:00","level":"INFO","msg":"sender: closed","stream_id":"ovmih8aa"}
+{"time":"2025-02-24T10:47:17.166965104+01:00","level":"INFO","msg":"stream: closed","id":"ovmih8aa"}

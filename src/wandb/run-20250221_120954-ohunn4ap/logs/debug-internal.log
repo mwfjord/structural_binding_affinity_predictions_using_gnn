@@ -1,0 +1,7 @@
+{"time":"2025-02-21T12:09:55.03927427+01:00","level":"INFO","msg":"stream: starting","core version":"0.19.6","symlink path":"/home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/wandb/run-20250221_120954-ohunn4ap/logs/debug-core.log"}
+{"time":"2025-02-21T12:09:55.150083528+01:00","level":"INFO","msg":"created new stream","id":"ohunn4ap"}
+{"time":"2025-02-21T12:09:55.150118374+01:00","level":"INFO","msg":"stream: started","id":"ohunn4ap"}
+{"time":"2025-02-21T12:09:55.150175092+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"ohunn4ap"}
+{"time":"2025-02-21T12:09:55.150367528+01:00","level":"INFO","msg":"handler: started","stream_id":"ohunn4ap"}
+{"time":"2025-02-21T12:09:55.15041589+01:00","level":"INFO","msg":"sender: started","stream_id":"ohunn4ap"}
+{"time":"2025-02-21T12:09:55.398471172+01:00","level":"INFO","msg":"Starting system monitor"}

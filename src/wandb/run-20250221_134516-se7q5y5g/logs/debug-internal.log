@@ -1,0 +1,16 @@
+{"time":"2025-02-21T13:45:16.667919446+01:00","level":"INFO","msg":"stream: starting","core version":"0.19.6","symlink path":"/home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/wandb/run-20250221_134516-se7q5y5g/logs/debug-core.log"}
+{"time":"2025-02-21T13:45:16.778505387+01:00","level":"INFO","msg":"created new stream","id":"se7q5y5g"}
+{"time":"2025-02-21T13:45:16.778577996+01:00","level":"INFO","msg":"stream: started","id":"se7q5y5g"}
+{"time":"2025-02-21T13:45:16.778739302+01:00","level":"INFO","msg":"handler: started","stream_id":"se7q5y5g"}
+{"time":"2025-02-21T13:45:16.778740485+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"se7q5y5g"}
+{"time":"2025-02-21T13:45:16.778840926+01:00","level":"INFO","msg":"sender: started","stream_id":"se7q5y5g"}
+{"time":"2025-02-21T13:45:17.017024445+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-02-21T13:45:56.563041254+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-02-21T13:45:56.563695459+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-02-21T13:45:57.563907831+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-se7q5y5g-test_affinity_table_table","runtime_seconds":4.974310125},{"desc":"uploading artifact run-se7q5y5g-test_affinity_table_table","runtime_seconds":4.7589142429999995},{"desc":"uploading artifact run-se7q5y5g-test_affinity_table_table","runtime_seconds":4.534586895},{"desc":"uploading artifact run-se7q5y5g-test_affinity_table_table","runtime_seconds":4.314898766},{"desc":"uploading artifact run-se7q5y5g-test_affinity_table_table","runtime_seconds":4.094299692},{"desc":"uploading artifact run-se7q5y5g-test_affinity_table_table","runtime_seconds":3.875439508},{"desc":"uploading artifact run-se7q5y5g-test_affinity_table_table","runtime_seconds":3.652101352},{"desc":"uploading artifact run-se7q5y5g-test_affinity_table_table","runtime_seconds":3.428681853},{"desc":"uploading artifact run-se7q5y5g-test_affinity_table_table","runtime_seconds":3.213378586},{"desc":"uploading artifact run-se7q5y5g-test_affinity_table_table","runtime_seconds":2.986558186}],"total_operations":19}}
+{"time":"2025-02-21T13:46:28.287095038+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-02-21T13:46:29.495555896+01:00","level":"INFO","msg":"stream: closing","id":"se7q5y5g"}
+{"time":"2025-02-21T13:46:29.495583138+01:00","level":"INFO","msg":"handler: closed","stream_id":"se7q5y5g"}
+{"time":"2025-02-21T13:46:29.495611712+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"se7q5y5g"}
+{"time":"2025-02-21T13:46:29.495625679+01:00","level":"INFO","msg":"sender: closed","stream_id":"se7q5y5g"}
+{"time":"2025-02-21T13:46:29.49574214+01:00","level":"INFO","msg":"stream: closed","id":"se7q5y5g"}

@@ -1,0 +1,30 @@
+2025-02-24 12:04:27,414 INFO    MainThread:84075 [wandb_setup.py:_flush():68] Current SDK version is 0.19.6
+2025-02-24 12:04:27,414 INFO    MainThread:84075 [wandb_setup.py:_flush():68] Configure stats pid to 84075
+2025-02-24 12:04:27,414 INFO    MainThread:84075 [wandb_setup.py:_flush():68] Loading settings from /home/marcus/.config/wandb/settings
+2025-02-24 12:04:27,414 INFO    MainThread:84075 [wandb_setup.py:_flush():68] Loading settings from /home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/wandb/settings
+2025-02-24 12:04:27,414 INFO    MainThread:84075 [wandb_setup.py:_flush():68] Loading settings from environment variables
+2025-02-24 12:04:27,414 INFO    MainThread:84075 [wandb_init.py:setup_run_log_directory():637] Logging user logs to /home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/wandb/run-20250224_120427-3rgyfxra/logs/debug.log
+2025-02-24 12:04:27,414 INFO    MainThread:84075 [wandb_init.py:setup_run_log_directory():638] Logging internal logs to /home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/wandb/run-20250224_120427-3rgyfxra/logs/debug-internal.log
+2025-02-24 12:04:27,415 INFO    MainThread:84075 [wandb_init.py:init():756] calling init triggers
+2025-02-24 12:04:27,415 INFO    MainThread:84075 [wandb_init.py:init():761] wandb.init called with sweep_config: {}
+config: {'wandb': {'project': 'structural_binding_affinity_predictions_using_gnn', 'entity': 'mwfjord', 'name': 'GNN Training', 'use_wandb': True}, 'hyperparameters': {'batch_size': [32, 128, 64], 'learning_rate': [0.1, 0.05, 0.01, 0.001], 'weight_decay': [0.0001, 1e-05, 0.001], 'sgd_momentum': [0.9, 0.8, 0.5], 'scheduler_gamma': [0.995, 0.9, 0.8, 0.5, 1], 'model_layers': [3], 'model_embedding_size': [8, 16, 32, 64, 128], 'model_top_k_ratio': [0.2, 0.5, 0.8, 0.9], 'model_top_k_every_n': [1], 'model_dense_neurons': [16, 128, 64, 256, 32]}, 'dataset': {'name': 'KLF1_K_d', 'path': '../data/', 'regenerate': False, 'edge_inclusion_radius': 10, 'max_logKd': 10.800759, 'split_ratio': {'train': 0.8, 'validation': 0.1, 'test': 0.1}}, 'logging': {'log_interval': 10, 'save_model': True, 'save_interval': 10}, 'utility': {'device': 'cuda', 'num_workers': 4, 'pin_memory': True, 'train': True, 'verbose': {'data': False, 'hyperparameters': True}, 'debug': False, 'seed': 42}, 'trainer': {'epochs': 1000, 'early_stopping_patience': 200}, 'tuner': {'optimizer': 'Bayesian', 'num_iteration': 100, 'initial_random': 1}, 'best_params': {'batch_size': 64, 'learning_rate': 0.05, 'model_dense_neurons': 32, 'model_embedding_size': 64, 'model_layers': 3, 'model_top_k_every_n': 1, 'model_top_k_ratio': 0.8, 'scheduler_gamma': 0.995, 'sgd_momentum': 0.9, 'weight_decay': 0.001}, '_wandb': {}}
+2025-02-24 12:04:27,415 INFO    MainThread:84075 [wandb_init.py:init():789] starting backend
+2025-02-24 12:04:27,625 INFO    MainThread:84075 [wandb_init.py:init():793] sending inform_init request
+2025-02-24 12:04:27,631 INFO    MainThread:84075 [backend.py:_multiprocessing_setup():97] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2025-02-24 12:04:27,632 INFO    MainThread:84075 [wandb_init.py:init():808] backend started and connected
+2025-02-24 12:04:27,637 INFO    MainThread:84075 [wandb_init.py:init():901] updated telemetry
+2025-02-24 12:04:27,646 INFO    MainThread:84075 [wandb_init.py:init():936] communicating run to backend with 90.0 second timeout
+2025-02-24 12:04:28,023 INFO    MainThread:84075 [wandb_init.py:init():994] starting run threads in backend
+2025-02-24 12:04:28,127 INFO    MainThread:84075 [wandb_run.py:_console_start():2385] atexit reg
+2025-02-24 12:04:28,127 INFO    MainThread:84075 [wandb_run.py:_redirect():2235] redirect: wrap_raw
+2025-02-24 12:04:28,127 INFO    MainThread:84075 [wandb_run.py:_redirect():2300] Wrapping output streams.
+2025-02-24 12:04:28,127 INFO    MainThread:84075 [wandb_run.py:_redirect():2325] Redirects installed.
+2025-02-24 12:04:28,131 INFO    MainThread:84075 [wandb_init.py:init():1036] run started, returning control to user process
+2025-02-24 12:06:03,486 INFO    MainThread:84075 [wandb_run.py:_config_callback():1253] config_cb ('_wandb', 'visualize', 'val/true_vs_pred') {'panel_type': 'Vega2', 'panel_config': {'panelDefId': 'wandb/scatter/v0', 'fieldSettings': {'x': 'True Binding Affinity', 'y': 'Predicted Binding Affinity'}, 'stringSettings': {'title': 'True vs Predicted Binding Affinity'}, 'transform': {'name': 'tableWithLeafColNames'}, 'userQuery': {'queryFields': [{'name': 'runSets', 'args': [{'name': 'runSets', 'value': '${runSets}'}], 'fields': [{'name': 'id', 'fields': []}, {'name': 'name', 'fields': []}, {'name': '_defaultColorIndex', 'fields': []}, {'name': 'summaryTable', 'args': [{'name': 'tableKey', 'value': 'val/true_vs_pred_table'}], 'fields': []}]}]}}} None
+2025-02-24 12:06:03,998 INFO    MainThread:84075 [wandb_run.py:_finish():2110] finishing run mwfjord/structural_binding_affinity_predictions_using_gnn/3rgyfxra
+2025-02-24 12:06:03,998 INFO    MainThread:84075 [wandb_run.py:_atexit_cleanup():2350] got exitcode: 0
+2025-02-24 12:06:03,999 INFO    MainThread:84075 [wandb_run.py:_restore():2332] restore
+2025-02-24 12:06:03,999 INFO    MainThread:84075 [wandb_run.py:_restore():2338] restore done
+2025-02-24 12:06:06,443 INFO    MainThread:84075 [wandb_run.py:_footer_history_summary_info():3963] rendering history
+2025-02-24 12:06:06,444 INFO    MainThread:84075 [wandb_run.py:_footer_history_summary_info():3995] rendering summary
+2025-02-24 12:06:06,445 INFO    MainThread:84075 [wandb_run.py:_footer_sync_info():3924] logging synced files

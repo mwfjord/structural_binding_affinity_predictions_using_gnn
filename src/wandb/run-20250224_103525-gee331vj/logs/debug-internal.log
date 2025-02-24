@@ -1,0 +1,16 @@
+{"time":"2025-02-24T10:35:25.255190663+01:00","level":"INFO","msg":"stream: starting","core version":"0.19.6","symlink path":"/home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/wandb/run-20250224_103525-gee331vj/logs/debug-core.log"}
+{"time":"2025-02-24T10:35:25.366605972+01:00","level":"INFO","msg":"created new stream","id":"gee331vj"}
+{"time":"2025-02-24T10:35:25.366645246+01:00","level":"INFO","msg":"stream: started","id":"gee331vj"}
+{"time":"2025-02-24T10:35:25.366705221+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"gee331vj"}
+{"time":"2025-02-24T10:35:25.367508549+01:00","level":"INFO","msg":"handler: started","stream_id":"gee331vj"}
+{"time":"2025-02-24T10:35:25.367570056+01:00","level":"INFO","msg":"sender: started","stream_id":"gee331vj"}
+{"time":"2025-02-24T10:35:25.64274727+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-02-24T10:36:49.010819826+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-02-24T10:36:49.011575895+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-02-24T10:36:50.011599778+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-gee331vj-histogram_table","runtime_seconds":1.343840503}],"total_operations":1}}
+{"time":"2025-02-24T10:36:50.275129719+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-02-24T10:36:51.706195308+01:00","level":"INFO","msg":"stream: closing","id":"gee331vj"}
+{"time":"2025-02-24T10:36:51.706230254+01:00","level":"INFO","msg":"handler: closed","stream_id":"gee331vj"}
+{"time":"2025-02-24T10:36:51.706247467+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"gee331vj"}
+{"time":"2025-02-24T10:36:51.706279658+01:00","level":"INFO","msg":"sender: closed","stream_id":"gee331vj"}
+{"time":"2025-02-24T10:36:51.706347207+01:00","level":"INFO","msg":"stream: closed","id":"gee331vj"}

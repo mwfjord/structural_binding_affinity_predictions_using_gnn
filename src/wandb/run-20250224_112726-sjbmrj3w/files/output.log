@@ -1,0 +1,50 @@
+Using GPU 3
+Regenerating dataset...
+Processing...
+Processing data...
+273it [01:35,  2.87it/s]
+Done!
+Regenerating dataset...
+Processing...
+Processing data...
+38it [00:13,  2.91it/s]
+Done!
+                                                                                                                                                                                                                                                  
+Epoch 10: Train Loss = 5.8838, Val Loss = 4.8207
+Epoch 20: Train Loss = 4.5703, Val Loss = 4.0062
+Epoch 30: Train Loss = 3.5167, Val Loss = 3.1283
+Epoch 40: Train Loss = 2.8784, Val Loss = 2.4931
+Epoch 50: Train Loss = 2.9110, Val Loss = 2.4987
+Epoch 60: Train Loss = 2.8205, Val Loss = 2.4074
+Epoch 70: Train Loss = 2.7528, Val Loss = 2.4100
+Epoch 80: Train Loss = 2.6341, Val Loss = 2.3841
+Epoch 90: Train Loss = 2.6820, Val Loss = 2.3745
+Epoch 100: Train Loss = 2.3838, Val Loss = 2.3391
+Epoch 110: Train Loss = 2.6420, Val Loss = 2.3606
+Epoch 120: Train Loss = 2.6122, Val Loss = 2.3572
+Epoch 130: Train Loss = 2.5141, Val Loss = 2.3403
+Epoch 140: Train Loss = 2.5383, Val Loss = 2.3392
+Epoch 150: Train Loss = 2.3992, Val Loss = 2.3411
+Epoch 160: Train Loss = 2.5289, Val Loss = 2.3306
+Epoch 170: Train Loss = 2.5037, Val Loss = 2.3241
+Epoch 180: Train Loss = 2.5107, Val Loss = 2.3288
+Epoch 190: Train Loss = 2.5522, Val Loss = 2.3316
+Epoch 200: Train Loss = 2.5208, Val Loss = 2.3265
+Epoch 210: Train Loss = 2.4257, Val Loss = 2.3197
+Epoch 220: Train Loss = 2.4877, Val Loss = 2.3163
+Epoch 230: Train Loss = 2.4346, Val Loss = 2.3209
+Epoch 240: Train Loss = 2.5082, Val Loss = 2.3133
+Epoch 250: Train Loss = 2.4827, Val Loss = 2.3182
+Epoch 260: Train Loss = 2.3949, Val Loss = 2.3165
+Epoch 270: Train Loss = 2.5003, Val Loss = 2.3128
+Epoch 280: Train Loss = 2.5899, Val Loss = 2.3141
+Epoch 290: Train Loss = 2.4673, Val Loss = 2.3165
+Epoch 300: Train Loss = 2.5530, Val Loss = 2.3180
+Epoch 310: Train Loss = 2.5656, Val Loss = 2.3175
+Epoch 320: Train Loss = 2.5123, Val Loss = 2.3198
+Epoch 330: Train Loss = 2.5525, Val Loss = 2.3231
+Epoch 340: Train Loss = 2.4895, Val Loss = 2.3237
+Epoch 350: Train Loss = 2.3314, Val Loss = 2.3208
+Epoch 360: Train Loss = 2.5348, Val Loss = 2.3194
+Epoch 370: Train Loss = 2.4286, Val Loss = 2.3205
+Early stopping triggered.

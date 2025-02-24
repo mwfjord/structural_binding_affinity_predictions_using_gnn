@@ -1,0 +1,12 @@
+Using GPU 3
+                                                                                                                                                                                                         
+Epoch 10: Train Loss = 6.7856, Val Loss = 7.6245
+Epoch 20: Train Loss = 6.2482, Val Loss = 5.9203
+Epoch 30: Train Loss = 5.7962, Val Loss = 5.0951
+Epoch 40: Train Loss = 5.3218, Val Loss = 5.4868
+Epoch 50: Train Loss = 6.0195, Val Loss = 5.1673
+Epoch 60: Train Loss = 6.0569, Val Loss = 5.1849
+Epoch 70: Train Loss = 5.5654, Val Loss = 5.4215
+Epoch 80: Train Loss = 5.6053, Val Loss = 4.8963
+Epoch 90: Train Loss = 4.9666, Val Loss = 4.5983
+Epoch 100: Train Loss = 5.3579, Val Loss = 5.2739

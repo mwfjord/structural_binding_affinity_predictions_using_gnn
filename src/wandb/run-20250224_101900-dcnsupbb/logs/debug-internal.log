@@ -1,0 +1,16 @@
+{"time":"2025-02-24T10:19:00.475802101+01:00","level":"INFO","msg":"stream: starting","core version":"0.19.6","symlink path":"/home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/wandb/run-20250224_101900-dcnsupbb/logs/debug-core.log"}
+{"time":"2025-02-24T10:19:00.586269455+01:00","level":"INFO","msg":"created new stream","id":"dcnsupbb"}
+{"time":"2025-02-24T10:19:00.586309441+01:00","level":"INFO","msg":"stream: started","id":"dcnsupbb"}
+{"time":"2025-02-24T10:19:00.586372551+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"dcnsupbb"}
+{"time":"2025-02-24T10:19:00.586535701+01:00","level":"INFO","msg":"handler: started","stream_id":"dcnsupbb"}
+{"time":"2025-02-24T10:19:00.586616305+01:00","level":"INFO","msg":"sender: started","stream_id":"dcnsupbb"}
+{"time":"2025-02-24T10:19:00.853269441+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-02-24T10:19:35.006126463+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-02-24T10:19:35.006870428+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-02-24T10:19:36.006628075+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact graph_classification_model","runtime_seconds":1.523585555,"subtasks":[{"desc":"model_epoch_100.pth","runtime_seconds":0.786350921,"progress":"169.5KB/169.5KB"}]},{"desc":"uploading artifact run-dcnsupbb-histogram_table","runtime_seconds":1.348091605}],"total_operations":2}}
+{"time":"2025-02-24T10:19:37.286361802+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-02-24T10:19:38.735620282+01:00","level":"INFO","msg":"stream: closing","id":"dcnsupbb"}
+{"time":"2025-02-24T10:19:38.735646913+01:00","level":"INFO","msg":"handler: closed","stream_id":"dcnsupbb"}
+{"time":"2025-02-24T10:19:38.735662302+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"dcnsupbb"}
+{"time":"2025-02-24T10:19:38.735686038+01:00","level":"INFO","msg":"sender: closed","stream_id":"dcnsupbb"}
+{"time":"2025-02-24T10:19:38.735778984+01:00","level":"INFO","msg":"stream: closed","id":"dcnsupbb"}

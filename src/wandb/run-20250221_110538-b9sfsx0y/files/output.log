@@ -1,0 +1,23 @@
+Using GPU 3
+No label file found. Generating random labels...
+                                                                                                                                                                                                                                                 
+Epoch 10: Train Loss = 6.5042, Val Loss = 6.7249
+Epoch 20: Train Loss = 6.3178, Val Loss = 5.7931
+Epoch 30: Train Loss = 6.1974, Val Loss = 5.2062
+Epoch 40: Train Loss = 6.0799, Val Loss = 5.4430
+Epoch 50: Train Loss = 6.0884, Val Loss = 5.6835
+Epoch 60: Train Loss = 5.6363, Val Loss = 5.3589
+Epoch 70: Train Loss = 5.1363, Val Loss = 4.7504
+Epoch 80: Train Loss = 5.9425, Val Loss = 5.6419
+Epoch 90: Train Loss = 4.6609, Val Loss = 3.8105
+Epoch 100: Train Loss = 4.6797, Val Loss = 4.7920
+Epoch 110: Train Loss = 5.1134, Val Loss = 4.4559
+Epoch 120: Train Loss = 4.9102, Val Loss = 4.0260
+Epoch 130: Train Loss = 4.5268, Val Loss = 4.5814
+Epoch 140: Train Loss = 4.8922, Val Loss = 4.6092
+Epoch 150: Train Loss = 4.6131, Val Loss = 4.1338
+Epoch 160: Train Loss = 3.7705, Val Loss = 4.0504
+Epoch 170: Train Loss = 4.2076, Val Loss = 3.9080
+Epoch 180: Train Loss = 4.0276, Val Loss = 3.9616
+Epoch 190: Train Loss = 4.2906, Val Loss = 3.8259
+Early stopping triggered.

@@ -1,0 +1,16 @@
+{"time":"2025-02-24T11:21:11.151911793+01:00","level":"INFO","msg":"stream: starting","core version":"0.19.6","symlink path":"/home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/wandb/run-20250224_112110-plphsdbp/logs/debug-core.log"}
+{"time":"2025-02-24T11:21:11.260867956+01:00","level":"INFO","msg":"created new stream","id":"plphsdbp"}
+{"time":"2025-02-24T11:21:11.260919504+01:00","level":"INFO","msg":"stream: started","id":"plphsdbp"}
+{"time":"2025-02-24T11:21:11.26094357+01:00","level":"INFO","msg":"handler: started","stream_id":"plphsdbp"}
+{"time":"2025-02-24T11:21:11.260946525+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"plphsdbp"}
+{"time":"2025-02-24T11:21:11.260979488+01:00","level":"INFO","msg":"sender: started","stream_id":"plphsdbp"}
+{"time":"2025-02-24T11:21:11.544435611+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-02-24T11:24:52.745403282+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-02-24T11:24:52.746019104+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-02-24T11:24:53.745978615+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-plphsdbp-valtrue_vs_pred_table","runtime_seconds":1.294308915}],"total_operations":1}}
+{"time":"2025-02-24T11:24:53.969890707+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-02-24T11:24:55.392601483+01:00","level":"INFO","msg":"stream: closing","id":"plphsdbp"}
+{"time":"2025-02-24T11:24:55.392628344+01:00","level":"INFO","msg":"handler: closed","stream_id":"plphsdbp"}
+{"time":"2025-02-24T11:24:55.392642571+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"plphsdbp"}
+{"time":"2025-02-24T11:24:55.392669152+01:00","level":"INFO","msg":"sender: closed","stream_id":"plphsdbp"}
+{"time":"2025-02-24T11:24:55.392725359+01:00","level":"INFO","msg":"stream: closed","id":"plphsdbp"}

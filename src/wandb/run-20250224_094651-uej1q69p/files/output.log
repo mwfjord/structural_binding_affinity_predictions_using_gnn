@@ -1,0 +1,4 @@
+Using GPU 3
+Hyperparameters: {'weight_decay': 0.0001, 'sgd_momentum': 0.9, 'scheduler_gamma': 0.995, 'model_top_k_ratio': 0.9, 'model_top_k_every_n': 1, 'model_layers': 3, 'model_embedding_size': 32, 'model_dense_neurons': 64, 'learning_rate': 0.001, 'batch_size': 32}
+Training:  67%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎                                                                 | 6/9 [00:00<00:00, 26.16it/s]
+Epoch 10: Train Loss = 4.9638, Val Loss = 5.0275

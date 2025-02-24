@@ -1,0 +1,23 @@
+Using GPU 3
+Regenerating dataset...
+Processing...
+Processing data...
+273it [01:37,  2.80it/s]
+Done!
+Regenerating dataset...
+Processing...
+Processing data...
+38it [00:13,  2.85it/s]
+Done!
+                                                                                                                                                                                                                                                  
+Epoch 10: Train Loss = nan, Val Loss = nan
+Epoch 20: Train Loss = nan, Val Loss = nan
+Epoch 30: Train Loss = nan, Val Loss = nan
+Epoch 40: Train Loss = nan, Val Loss = nan
+Epoch 50: Train Loss = nan, Val Loss = nan
+Epoch 60: Train Loss = nan, Val Loss = nan
+Epoch 70: Train Loss = nan, Val Loss = nan
+Epoch 80: Train Loss = nan, Val Loss = nan
+Epoch 90: Train Loss = nan, Val Loss = nan
+Epoch 100: Train Loss = nan, Val Loss = nan
+Early stopping triggered.

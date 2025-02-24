@@ -1,0 +1,7 @@
+{"time":"2025-02-24T11:02:51.357420433+01:00","level":"INFO","msg":"stream: starting","core version":"0.19.6","symlink path":"/home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/wandb/run-20250224_110251-e8p8br1n/logs/debug-core.log"}
+{"time":"2025-02-24T11:02:51.467600575+01:00","level":"INFO","msg":"created new stream","id":"e8p8br1n"}
+{"time":"2025-02-24T11:02:51.467642315+01:00","level":"INFO","msg":"stream: started","id":"e8p8br1n"}
+{"time":"2025-02-24T11:02:51.467823109+01:00","level":"INFO","msg":"handler: started","stream_id":"e8p8br1n"}
+{"time":"2025-02-24T11:02:51.467838268+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"e8p8br1n"}
+{"time":"2025-02-24T11:02:51.467929291+01:00","level":"INFO","msg":"sender: started","stream_id":"e8p8br1n"}
+{"time":"2025-02-24T11:02:51.710600052+01:00","level":"INFO","msg":"Starting system monitor"}

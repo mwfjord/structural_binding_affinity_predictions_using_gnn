@@ -1,0 +1,16 @@
+{"time":"2025-02-24T12:42:49.973777546+01:00","level":"INFO","msg":"stream: starting","core version":"0.19.6","symlink path":"/home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/wandb/run-20250224_124249-5yzs50si/logs/debug-core.log"}
+{"time":"2025-02-24T12:42:50.083588421+01:00","level":"INFO","msg":"created new stream","id":"5yzs50si"}
+{"time":"2025-02-24T12:42:50.083636422+01:00","level":"INFO","msg":"stream: started","id":"5yzs50si"}
+{"time":"2025-02-24T12:42:50.083691106+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"5yzs50si"}
+{"time":"2025-02-24T12:42:50.083959717+01:00","level":"INFO","msg":"sender: started","stream_id":"5yzs50si"}
+{"time":"2025-02-24T12:42:50.083962342+01:00","level":"INFO","msg":"handler: started","stream_id":"5yzs50si"}
+{"time":"2025-02-24T12:42:50.316320732+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-02-24T12:43:20.570079651+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-02-24T12:43:20.570892137+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-02-24T12:43:21.531002521+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-5yzs50si-valtrue_vs_pred_table","runtime_seconds":1.3165076390000001}],"total_operations":1}}
+{"time":"2025-02-24T12:43:21.723482744+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-02-24T12:43:22.927927706+01:00","level":"INFO","msg":"stream: closing","id":"5yzs50si"}
+{"time":"2025-02-24T12:43:22.927950599+01:00","level":"INFO","msg":"handler: closed","stream_id":"5yzs50si"}
+{"time":"2025-02-24T12:43:22.927961149+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"5yzs50si"}
+{"time":"2025-02-24T12:43:22.928010844+01:00","level":"INFO","msg":"sender: closed","stream_id":"5yzs50si"}
+{"time":"2025-02-24T12:43:22.928065598+01:00","level":"INFO","msg":"stream: closed","id":"5yzs50si"}

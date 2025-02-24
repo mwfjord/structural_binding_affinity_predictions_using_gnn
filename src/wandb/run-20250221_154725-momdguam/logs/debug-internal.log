@@ -1,0 +1,7 @@
+{"time":"2025-02-21T15:47:25.285549793+01:00","level":"INFO","msg":"stream: starting","core version":"0.19.6","symlink path":"/home/marcus/programming/structural_binding_affinity_predictions_using_gnn/src/wandb/run-20250221_154725-momdguam/logs/debug-core.log"}
+{"time":"2025-02-21T15:47:25.396003102+01:00","level":"INFO","msg":"created new stream","id":"momdguam"}
+{"time":"2025-02-21T15:47:25.396038429+01:00","level":"INFO","msg":"stream: started","id":"momdguam"}
+{"time":"2025-02-21T15:47:25.396119643+01:00","level":"INFO","msg":"sender: started","stream_id":"momdguam"}
+{"time":"2025-02-21T15:47:25.396122388+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"momdguam"}
+{"time":"2025-02-21T15:47:25.396199374+01:00","level":"INFO","msg":"handler: started","stream_id":"momdguam"}
+{"time":"2025-02-21T15:47:25.668425683+01:00","level":"INFO","msg":"Starting system monitor"}
